@@ -1,0 +1,21 @@
+{
+  "name": "mg-vscode-theme",
+  "displayName": "mg-vscode-theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "iNature",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNature-color-theme.json"
+      }
+    ]
+  }
+}
