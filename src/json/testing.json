@@ -1,0 +1,21 @@
+{
+  "iconFailed": "",
+  "iconErrored": "",
+  "iconPassed": "",
+  "runAction": "",
+  "iconQueued": "",
+  "iconUnset": "",
+  "iconSkipped": "",
+  "peekBorder":"",
+  "peekHeaderBackground": "",
+  "message": {
+    "error": {
+      "decorationForeground": "",
+      "lineBackground": ""
+    },
+    "info": {
+      "decorationForeground": "",
+      "lineBackground": ""
+    }
+  }
+}

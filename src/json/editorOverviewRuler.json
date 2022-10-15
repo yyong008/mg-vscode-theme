@@ -1,0 +1,19 @@
+{
+  "background": "",
+  "border": "",
+  "findMatchForeground": "",
+  "rangeHighlightForeground": "",
+  "selectionHighlightForeground":"",
+  "wordHighlightForeground": "",
+  "wordHighlightStrongForeground": "",
+  "modifiedForeground": "",
+  "addedForeground": "",
+  "deletedForeground": "",
+  "errorForeground": "",
+  "warningForeground": "",
+  "infoForeground":"",
+  "bracketMatchForeground": "",
+  "currentContentForeground": "",
+  "incomingContentForeground":" ",
+  "commonContentForeground": ""
+}

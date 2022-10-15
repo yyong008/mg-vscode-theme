@@ -1,0 +1,17 @@
+{
+  "breakpointForeground": "",
+  "breakpointDisabledForeground": "",
+  "breakpointUnverifiedForeground": "",
+  "breakpointCurrentStackframeForeground": "",
+  "breakpointStackframeForeground": "",
+  "startForeground": "",
+  "pauseForeground": "",
+  "stopForeground": "",
+  "disconnectForeground": "",
+  "restartForeground": "",
+  "stepOverForeground": "",
+  "stepIntoForeground": "",
+  "stepOutForeground": "",
+  "continueForeground": "",
+  "stepBackForeground": ""
+}
