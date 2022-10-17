@@ -1,8 +1,9 @@
 {
-  "name": "mg-vscode-theme",
-  "displayName": "mg-vscode-theme",
+  "name": "i-nature",
+  "displayName": "iNature",
   "description": "",
   "version": "0.0.1",
+  "type": "module",
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -19,7 +20,8 @@
     ]
   },
   "dependencies": {
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "gulp": "^4.0.2"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.js,.tsx,.jsx .",
@@ -29,23 +31,24 @@
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "postinstallmac": "git config core.hooksPath .husky && chmod 777 .husky/*",
-    "commit": "git add . && cz"
+    "commit": "git add . && cz",
+    "gulp": "gulp"
   },
   "devDependencies": {
-    "eslint": "^8.22.0",
-    "typescript": "^4.7.4",
-    "@typescript-eslint/parser": "^5.33.1",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
-    "prettier": "^2.7.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "stylelint": "^14.10.0",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "lint-staged": "^13.0.3",
-    "husky": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
     "commitizen": "^4.2.5",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.10.0",
+    "typescript": "^4.7.4"
   },
   "config": {
     "commitizen": {
