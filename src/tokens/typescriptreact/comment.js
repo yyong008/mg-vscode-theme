@@ -3,6 +3,7 @@ import colors from '../../designs/index.js'
 const tsxComment = {
   name: 'tsx::comment',
   scope: [
+    'punctuation.definition.comment.tsx',
     'comment.block.documentation.tsx',
     'comment.line.double-slash.tsx',
     'punctuation.definition.comment',

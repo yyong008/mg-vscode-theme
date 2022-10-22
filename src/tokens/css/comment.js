@@ -13,7 +13,7 @@ const styleComment = {
     'punctuation.definition.comment'
   ],
   settings: {
-    foreground: colors.grayColors200,
+    foreground: colors.grayColors800,
     fontStyle: 'italic'
   }
 }

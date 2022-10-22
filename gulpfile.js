@@ -1,10 +1,19 @@
-import fs from 'node:fs/promises'
+import gulp from 'gulp'
 
-import start from './src/index.js'
+import run from './src/index.js'
 
-export default async () => {
-  const themePath = './themes/iNature-color-theme.json'
-
-  const theme = await start()
-  await fs.writeFile(themePath, JSON.stringify(theme, null, 2), 'utf8')
+async function main() {
+  await run()
+  gulp.watch(
+    ['./src/**/*.js', './src/**/*.json'],
+    { events: 'all' },
+    async function (cb) {
+      console.log('重新编译中...')
+      await run()
+      console.log('编译成功!')
+      cb()
+    }
+  )
 }
+
+export default main

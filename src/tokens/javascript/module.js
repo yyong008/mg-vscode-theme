@@ -30,7 +30,7 @@ const jsDefaultStringKeyword = {
 }
 
 const jsImportVariables = {
-  name: 'jas::import-variables',
+  name: 'js::import-variables',
   scope: ['variable.other.readwrite.alias.js', 'variable.other.object.js'],
   settings: {
     foreground: colors.greenColors400

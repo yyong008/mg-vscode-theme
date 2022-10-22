@@ -14,4 +14,13 @@ const punctuation = {
   }
 }
 
-export default [punctuation]
+const punctuationComment = {
+  name: 'js/ts::punctuation',
+  scope: ['punctuation.definition.comment.js'],
+  settings: {
+    foreground: colors.grayColors800,
+    fontStyle: 'italic bold'
+  }
+}
+
+export default [punctuation, punctuationComment]
