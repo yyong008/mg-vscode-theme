@@ -35,13 +35,19 @@ export default interface Editor {
   linkedEditingBackground: string
   foldBackground: string
   stackFrameHighlightBackground: string
-  focusedStackFrameHighlightBackground: string
+  focusedStackFrameHighlightBackground: string // debug
   inlineValuesForeground: string
   inlineValuesBackground: string
   snippetTabstopHighlightBackground: string
   snippetTabstopHighlightBorder: string
   snippetFinalTabstopHighlightBackground: string
   snippetFinalTabstopHighlightBorder: string
+}
+
+export interface EditorDebug {
+  focusedStackFrameHighlightBackground: string // debug
+  inlineValuesForeground: string
+  inlineValuesBackground: string
 }
 
 export interface EditorBracketHighlight {
@@ -215,7 +221,7 @@ export interface EditorOverviewRuler {
   infoForeground: string
   bracketMatchForeground: string
   currentContentForeground: string
-  incomingContentForeground: ' '
+  incomingContentForeground: string
   commonContentForeground: string
 }
 

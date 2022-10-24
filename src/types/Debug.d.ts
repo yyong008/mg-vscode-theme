@@ -1,9 +1,9 @@
 export interface DebugConsole {
-  infoForeground: ''
-  warningForeground: ''
-  errorForeground: ''
-  sourceForeground: ''
-  foreground: ''
+  infoForeground: string
+  warningForeground: string
+  errorForeground: string
+  sourceForeground: string
+  foreground: string
 }
 
 export interface DebugConsoleInputIcon {
@@ -46,8 +46,15 @@ export interface DebugTokenExpression {
   error: string
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface DebugToolBar {}
+export interface DebugToolBar {
+  background: string
+  border: string
+}
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface DebugView {}
+export interface DebugView {
+  exceptionLabelForeground: string
+  exceptionLabelBackground: string
+  stateLabelForeground: string
+  stateLabelBackground: string
+  valueChangedHighlight: string
+}

@@ -1,11 +1,21 @@
 import colors from '../designs/index.js'
 
+/**
+ * @type {import('../types/Menu').Menu}
+ */
 const menu = {
-  // ['menu.background']: colors.grayColors400,
+  ['menu.background']: '',
   ['menu.foreground']: colors.limeColors300
 }
 
-const menuBar = {}
+/**
+ * @type {import('../types/Menu').MenuBar}
+ */
+const menuBar = {
+  ['menu.selectionForeground']: '',
+  ['menu.selectionBackground']: '',
+  ['menu.selectionBorder']: ''
+}
 
 export default {
   ...menu,

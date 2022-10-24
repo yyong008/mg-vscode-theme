@@ -1,9 +1,12 @@
-import colors from '../designs'
+import colors from '../designs/index.js'
 
+/**
+ * @type {import('../types/Banner')}
+ */
 const banner = {
-  background: '',
-  foreground: '',
-  iconForeground: ' '
+  background: colors.redColors400,
+  foreground: colors.redColors400,
+  iconForeground: colors.redColors500
 }
 
-export default banner
+export default { ...banner }

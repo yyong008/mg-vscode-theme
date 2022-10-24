@@ -8,7 +8,7 @@ const jsImportFrom = {
     'keyword.control.export.js'
   ],
   settings: {
-    foreground: colors.greenColors800
+    foreground: colors.grayColors600
   }
 }
 

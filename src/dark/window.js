@@ -1,8 +1,11 @@
 import colors from '../designs/index.js'
 
+/**
+ * @type {import('../types/window.js').default}
+ */
 const window = {
-  ['window.activeBorder']: colors.redColors600,
-  ['window.inactiveBorder']: colors.redColors700
+  ['window.activeBorder']: colors.limeColors400,
+  ['window.inactiveBorder']: colors.limeColors400
 }
 
 export default window

@@ -1,11 +1,16 @@
 import colors from '../designs/index.js'
-import { editorDebug } from './editor.js'
 
+/**
+ * @type {import('../types/Debug').DebugToolBar}
+ */
 const debugToolBar = {
-  ['debugToolBar.background']: '#1e1f1c',
+  ['debugToolBar.background']: colors.redColors400,
   ['debugToolBar.border']: ''
 }
 
+/**
+ * @type {import('../types/Debug').DebugView}
+ */
 const debugView = {
   ['debugView.exceptionLabelForeground']: '',
   ['debugView.exceptionLabelBackground']: '',
@@ -14,6 +19,9 @@ const debugView = {
   ['debugView.valueChangedHighlight']: ''
 }
 
+/**
+ * @type {import('../types/Debug').DebugTokenExpression}
+ */
 const debugTokenExpression = {
   ['debugTokenExpression.name']: '',
   ['debugTokenExpression.value']: '',
@@ -24,7 +32,6 @@ const debugTokenExpression = {
 }
 
 export default {
-  ...editorDebug,
   ...debugToolBar,
   ...debugView,
   ...debugTokenExpression

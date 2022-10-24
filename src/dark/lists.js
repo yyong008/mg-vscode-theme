@@ -1,5 +1,8 @@
 import colors from '../designs/index.js'
 
+/**
+ * @type {import('../types/List').List}
+ */
 const list = {
   ['list.activeSelectionBackground']: '#75715E',
   ['list.inactiveSelectionBackground']: '#414339',

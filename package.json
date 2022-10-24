@@ -13,9 +13,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "iNature",
+        "label": "iNature Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/iNature-color-theme.json"
+        "path": "./themes/iNatureDark.json"
+      },
+      {
+        "label": "iNature Light",
+        "uiTheme": "vs",
+        "path": "./themes/iNatureLight.json"
+      },
+      {
+        "label": "iNature HC",
+        "uiTheme": "hc-light",
+        "path": "./themes/iNatureLightConstrast.json"
+      },
+      {
+        "label": "iNature HC black",
+        "uiTheme": "hc-black",
+        "path": "./themes/iNatureDarkConstrast.json"
       }
     ]
   },
@@ -48,6 +63,8 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-prettier": "^2.0.0",
     "typescript": "^4.7.4"
   },
   "config": {

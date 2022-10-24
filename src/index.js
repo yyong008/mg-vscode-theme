@@ -4,68 +4,44 @@ import { genThemePath } from './utils/index.js'
 import createThemeColors from './dark/index.js'
 import createColorTokens from './tokens/index.js'
 
+const themeDark = {
+  name: 'iNatureDark',
+  semanticHighlighting: false,
+  colors: await createThemeColors(),
+  tokenColors: createColorTokens()
+}
+
+const themeLight = {
+  name: 'iNatureLight',
+  semanticHighlighting: false,
+  colors: await createThemeColors(),
+  tokenColors: createColorTokens()
+}
+
+const themeDarkConstrast = {
+  name: 'iNatureDarkConstrast',
+  semanticHighlighting: false,
+  colors: await createThemeColors(),
+  tokenColors: createColorTokens()
+}
+
+const themeLightConstrast = {
+  name: 'iNatureLightConstrast',
+  semanticHighlighting: false,
+  colors: await createThemeColors(),
+  tokenColors: createColorTokens()
+}
+
 export default async function run() {
-  await createLight()
-  await createDark()
-  await createLightConstrast()
-  await createDarkConstrast()
+  await createTheme(themeLight)
+  await createTheme(themeDark)
+  await createTheme(themeDarkConstrast)
+  await createTheme(themeLightConstrast)
 }
 
-export async function createDark() {
-  const theme = {
-    name: 'iNature Dark',
-    semanticHighlighting: false,
-    colors: await createThemeColors(),
-    tokenColors: createColorTokens()
-  }
-
+export async function createTheme(theme) {
   await fs.writeFile(
-    genThemePath('dark'),
-    JSON.stringify(theme, null, 2),
-    'utf8'
-  )
-}
-
-export async function createLight() {
-  const theme = {
-    name: 'iNature light',
-    semanticHighlighting: false,
-    colors: await createThemeColors(),
-    tokenColors: createColorTokens()
-  }
-
-  await fs.writeFile(
-    genThemePath('light'),
-    JSON.stringify(theme, null, 2),
-    'utf8'
-  )
-}
-
-export async function createLightConstrast() {
-  const theme = {
-    name: 'iNature Light Constrast',
-    semanticHighlighting: false,
-    colors: await createThemeColors(),
-    tokenColors: createColorTokens()
-  }
-
-  await fs.writeFile(
-    genThemePath('light-constrast'),
-    JSON.stringify(theme, null, 2),
-    'utf8'
-  )
-}
-
-export async function createDarkConstrast() {
-  const theme = {
-    name: 'iNature Dark Constrast',
-    semanticHighlighting: false,
-    colors: await createThemeColors(),
-    tokenColors: createColorTokens()
-  }
-
-  await fs.writeFile(
-    genThemePath('dark-constrast'),
+    genThemePath(theme.name),
     JSON.stringify(theme, null, 2),
     'utf8'
   )

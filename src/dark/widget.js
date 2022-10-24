@@ -1,5 +1,8 @@
-import colors from '../designs'
+import colors from '../designs/index.js'
 
+/**
+ * @type {import('../types/widget').default}
+ */
 const widget = {
   ['widget.shadow']: '#00000098'
 }

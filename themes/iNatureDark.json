@@ -1,7 +1,10 @@
 {
-  "name": "iNature Dark",
+  "name": "iNatureDark",
   "semanticHighlighting": false,
   "colors": {
+    "toolbar.hoverBackground": "#7cb305",
+    "toolbar.hoverOutline": "#820014",
+    "toolbar.activeBackground": "#a8071a",
     "contrastActiveBorder": "#002329",
     "focusBorder": "#75715E",
     "terminal.ansiBlack": "#333333",
@@ -41,7 +44,7 @@
     "editorGroup.border": "#ff4d4f",
     "editorGroupHeader.tabsBackground": "#1e1f1c",
     "editorGroup.dropBackground": "#41433980",
-    "editorWidget.background": "#5c0011",
+    "editorWidget.background": "#1f1f1f",
     "editorHoverWidget.background": "#262626",
     "editorHoverWidget.border": "#75715E",
     "editorSuggestWidget.background": "#272822",
@@ -87,6 +90,10 @@
     "titleBar.activeBackground": "#1e1f1c",
     "quickInputList.focusBackground": "#414339",
     "selection.background": "#878b9180",
+    "notifications.foreground": "#d3f261",
+    "notifications.background": "#262626",
+    "dropdown.listBackground": "#1890ff",
+    "dropdown.background": "#69c0ff",
     "window.activeBorder": "#f5222d",
     "window.inactiveBorder": "#cf1322"
   },

@@ -9,5 +9,5 @@ export function removeNullStrAttr(obj) {
 }
 
 export function genThemePath(theme) {
-  return `./themes/iNature-color-theme-${theme}.json`
+  return `./themes/${theme}.json`
 }
