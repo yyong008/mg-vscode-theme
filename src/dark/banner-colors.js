@@ -5,7 +5,7 @@ import colors from '../designs/index.js'
  */
 const banner = {
   background: colors.redColors400,
-  foreground: colors.redColors400,
+  foreground: colors.cyanColors400,
   iconForeground: colors.redColors500
 }
 

@@ -31,8 +31,48 @@ const debugTokenExpression = {
   ['debugTokenExpression.error']: ''
 }
 
+/**
+ * @type {import('../types/Debug').DebugIcon}
+ */
+const debugIcon = {
+  ['debugIcon.breakpointForeground']: '',
+  ['debugIcon.breakpointDisabledForeground']: '',
+  ['debugIcon.breakpointUnverifiedForeground']: '',
+  ['debugIcon.breakpointCurrentStackframeForeground']: '',
+  ['debugIcon.breakpointStackframeForeground']: '',
+  ['debugIcon.startForeground']: '',
+  ['debugIcon.pauseForeground']: '',
+  ['debugIcon.stopForeground']: '',
+  ['debugIcon.disconnectForeground']: '',
+  ['debugIcon.restartForeground']: '',
+  ['debugIcon.stepOverForeground']: '',
+  ['debugIcon.stepIntoForeground']: '',
+  ['debugIcon.stepOutForeground']: '',
+  ['debugIcon.continueForeground']: '',
+  ['debugIcon.stepBackForeground']: ''
+}
+
+/**
+ * @type {import('../types/Debug').DebugConsole}
+ */
+const DebugConsole = {
+  ['debugConsole.infoForeground']: '',
+  ['debugConsole.warningForeground']: '',
+  ['debugConsole.errorForeground']: '',
+  ['debugConsole.sourceForeground']: ''
+}
+
+/**
+ * @type {import('../types/Debug').DebugConsoleInputIcon}
+ */
+const debugConsoleInputIcon = {
+  ['debugConsoleInputIcon.foreground']: ''
+}
 export default {
   ...debugToolBar,
   ...debugView,
-  ...debugTokenExpression
+  ...debugTokenExpression,
+  ...debugIcon,
+  ...DebugConsole,
+  ...debugConsoleInputIcon
 }

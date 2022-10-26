@@ -10,7 +10,7 @@ const jsComment = {
     'comment.line.shebang.js'
   ],
   settings: {
-    fontStyle: 'italic',
+    fontStyle: 'bold italic',
     foreground: colors.grayColors800
   }
 }

@@ -4,8 +4,8 @@ import colors from '../designs/index.js'
  * @type {import('../types/Menu').Menu}
  */
 const menu = {
-  ['menu.background']: '',
-  ['menu.foreground']: colors.limeColors300
+  ['menu.background']: colors.grayColors1000,
+  ['menu.foreground']: colors.grayColors400
 }
 
 /**
@@ -13,7 +13,7 @@ const menu = {
  */
 const menuBar = {
   ['menu.selectionForeground']: '',
-  ['menu.selectionBackground']: '',
+  ['menu.selectionBackground']: colors.grayColors800,
   ['menu.selectionBorder']: ''
 }
 

@@ -5,7 +5,7 @@ import colors from '../designs/index.js'
  */
 const statusBarColors = {
   [`statusBar.foreground`]: colors.black,
-  [`statusBar.background`]: colors.greenColors900
+  [`statusBar.background`]: colors.cyanColors900
 }
 
 /**
@@ -14,7 +14,7 @@ const statusBarColors = {
  */
 const statusBarItemColors = {
   [`statusBarItem.activeBackground`]: colors.greenColors400,
-  [`statusBarItem.hoverBackground`]: colors.limeColors400,
+  [`statusBarItem.hoverBackground`]: colors.grayColors1000,
   [`statusBarItem.prominentForeground`]: colors.cyanColors500,
   [`statusBarItem.prominentBackground`]: colors.white,
   [`statusBarItem.prominentHoverBackground`]: colors.white,

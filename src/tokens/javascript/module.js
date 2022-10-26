@@ -8,7 +8,7 @@ const jsImportFrom = {
     'keyword.control.export.js'
   ],
   settings: {
-    foreground: colors.grayColors600
+    foreground: colors.grayColors400
   }
 }
 
@@ -16,7 +16,7 @@ const jsFromStringKeyword = {
   name: 'js::from-content',
   scope: ['meta.import.js'],
   settings: {
-    foreground: colors.limeColors500
+    foreground: colors.cyanColors400
   }
 }
 
@@ -24,7 +24,7 @@ const jsDefaultStringKeyword = {
   name: 'js::default-string',
   scope: ['keyword.control.default.js'],
   settings: {
-    foreground: colors.greenColors300,
+    foreground: colors.cyanColors400,
     fontStyle: 'bold'
   }
 }
@@ -33,7 +33,7 @@ const jsImportVariables = {
   name: 'js::import-variables',
   scope: ['variable.other.readwrite.alias.js', 'variable.other.object.js'],
   settings: {
-    foreground: colors.greenColors400
+    foreground: colors.cyanColors400
   }
 }
 
@@ -41,7 +41,7 @@ const jsVariableOtherReadwriteAlias = {
   name: 'js::from::alias',
   scope: ['variable.other.readwrite.alias.js', 'variable.other.readwrite.js'],
   settings: {
-    foreground: colors.greenColors300
+    foreground: colors.cyanColors400
   }
 }
 

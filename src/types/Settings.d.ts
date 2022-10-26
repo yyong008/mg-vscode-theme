@@ -1,4 +1,4 @@
-export default interface Setting {
+export default interface Settings {
   headerForeground: string
   modifiedItemIndicator: string
   dropdownBackground: string

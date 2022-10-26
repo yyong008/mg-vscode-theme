@@ -26,7 +26,7 @@ const notificationToast = {
  * @type {import('../types/Notification').Notifications}
  */
 const notifications = {
-  ['notifications.foreground']: colors.limeColors400,
+  ['notifications.foreground']: colors.cyanColors400,
   ['notifications.background']: colors.grayColors1000,
   ['notifications.border']: ''
 }

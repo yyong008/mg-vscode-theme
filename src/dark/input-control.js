@@ -11,7 +11,7 @@ const input = {
  * @type {import('../types/Input').InputOption}
  */
 const inputOption = {
-  ['inputOption.activeBorder']: colors.limeColors500
+  ['inputOption.activeBorder']: colors.cyanColors500
 }
 
 /**

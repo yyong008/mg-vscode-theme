@@ -4,8 +4,8 @@ import colors from '../designs/index.js'
  * @type {import('../types/Extension').ExtensionButton}
  */
 const extensionButton = {
-  ['extensionButton.prominentForeground']: colors.limeColors900,
-  ['extensionButton.prominentBackground']: colors.limeColors400,
+  ['extensionButton.prominentForeground']: colors.cyanColors900,
+  ['extensionButton.prominentBackground']: colors.cyanColors400,
   ['extensionButton.prominentHoverBackground']: ''
 }
 

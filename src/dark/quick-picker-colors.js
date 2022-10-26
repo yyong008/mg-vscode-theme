@@ -1,10 +1,13 @@
 import colors from '../designs/index.js'
 
 /**
- * @type {import('../types/QuickInput').quickPickerColors}
+ * @type {import('../types/PickerGroup').PickerGroup}
  */
-const quickPickerColors = {}
+const pickerGroup = {
+  ['quickInput.background']: '',
+  ['quickInput.foreground']: ''
+}
 
 export default {
-  ...quickPickerColors
+  ...pickerGroup
 }

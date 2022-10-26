@@ -5,7 +5,7 @@ import colors from '../designs/index.js'
  */
 const editor = {
   ['editor.background']: colors.grayColors1100,
-  ['editor.foreground']: colors.limeColors400,
+  ['editor.foreground']: colors.cyanColors400,
   ['editor.selectionHighlightBackground']: '#575b6180',
   ['editor.selectionBackground']: '#878b9180',
   ['editor.wordHighlightBackground']: '#4a4a7680',
@@ -39,7 +39,7 @@ const editorIndentGuide = {
  * @type {import('../types/Editor').EditorGroup}
  */
 const editorGroupColors = {
-  ['editorGroup.border']: colors.limeColors400,
+  ['editorGroup.border']: colors.cyanColors400,
   ['editorGroup.dropBackground']: '#41433980'
 }
 

@@ -5,7 +5,7 @@ import colors from '../designs/index.js'
  */
 const activityBar = {
   ['activityBar.background']: colors.grayColors1000,
-  ['activityBar.foreground']: colors.limeColors400
+  ['activityBar.foreground']: colors.cyanColors400
 }
 
 /**
@@ -13,7 +13,7 @@ const activityBar = {
  */
 const activityBarBadge = {
   ['activityBarBadge.background']: colors.volcanoColors600,
-  ['activityBarBadge.foreground']: colors.limeColors400
+  ['activityBarBadge.foreground']: colors.cyanColors400
 }
 
 /**

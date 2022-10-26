@@ -8,3 +8,7 @@ export default interface WelcomePage {
   tileHoverBackground: string
   tileShadow: string
 }
+
+export interface workThrough {
+  embeddedEditorBackground: string
+}

@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
+  '@types/vscode': ^1.72.0
   '@typescript-eslint/eslint-plugin': ^5.33.1
   '@typescript-eslint/parser': ^5.33.1
   commitizen: ^4.2.5
@@ -27,6 +28,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
+  '@types/vscode': 1.72.0
   '@typescript-eslint/eslint-plugin': 5.40.1_c4zyna56jjjrggqkyejnaxjxfu
   '@typescript-eslint/parser': 5.40.1_wyqvi574yv7oiwfeinomdzmc3m
   commitizen: 4.2.5
@@ -357,6 +359,10 @@ packages:
 
   /@types/semver/7.3.12:
     resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
+    dev: true
+
+  /@types/vscode/1.72.0:
+    resolution: {integrity: sha512-WvHluhUo+lQvE3I4wUagRpnkHuysB4qSyOQUyIAS9n9PYMJjepzTUD8Jyks0YeXoPD0UGctjqp2u84/b3v6Ydw==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.40.1_c4zyna56jjjrggqkyejnaxjxfu:

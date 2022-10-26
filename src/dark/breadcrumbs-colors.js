@@ -4,9 +4,9 @@ import colors from '../designs/index.js'
  * @type {import("../types/Breadcrumb").default}
  */
 const breadbrumbs = {
-  foreground: colors.limeColors700,
+  foreground: colors.cyanColors700,
   background: colors.volcanoColors400,
-  focusForeground: colors.limeColors400,
+  focusForeground: colors.cyanColors400,
   activeSelectionForeground: ''
 }
 
