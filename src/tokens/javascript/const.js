@@ -4,8 +4,7 @@ const cnst = {
   name: 'js::const',
   scope: ['storage.type.js'],
   settings: {
-    foreground: colors.grayColors100,
-    fontStyle: 'bold italic'
+    foreground: colors.grayColors100
   }
 }
 

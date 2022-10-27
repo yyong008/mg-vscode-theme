@@ -63,7 +63,6 @@ const mdBold = {
   name: 'md:bold',
   scope: ['markup.bold.markdown', 'punctuation.definition.bold.markdown'],
   settings: {
-    fontStyle: 'bold italic',
     foreground: colors.limeColors500
   }
 }

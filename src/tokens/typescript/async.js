@@ -4,8 +4,7 @@ const asyncAwait = {
   name: 'ts::async-await',
   scope: ['storage.modifier.async.ts', 'keyword.control.flow.ts'],
   settings: {
-    foreground: colors.brandColors800,
-    fontStyle: 'bold italic'
+    foreground: colors.grayColors100
   }
 }
 

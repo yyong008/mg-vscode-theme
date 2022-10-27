@@ -4,8 +4,7 @@ const tsxDitional = {
   name: 'tsx::conditional',
   scope: ['keyword.control.conditional.tsx'],
   settings: {
-    foreground: colors.magentaColors600,
-    fontStyle: 'italic'
+    foreground: colors.magentaColors600
   }
 }
 

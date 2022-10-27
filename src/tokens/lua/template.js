@@ -4,8 +4,7 @@ const luaTemplate = {
   name: 'lua::template',
   scope: ['string.template.lua'],
   settings: {
-    foreground: colors.brandColors600,
-    fontStyle: 'italic underline'
+    foreground: colors.brandColors600
   }
 }
 

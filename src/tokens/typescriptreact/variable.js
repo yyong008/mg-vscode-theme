@@ -29,8 +29,7 @@ const tsxTrue = {
   name: 'tsx::true',
   scope: ['constant.language.boolean.true.tsx'],
   settings: {
-    foreground: colors.greenColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.greenColors500
   }
 }
 
@@ -38,8 +37,7 @@ const tsxFalse = {
   name: 'tsx::false',
   scope: ['constant.language.boolean.false.tsx'],
   settings: {
-    foreground: colors.redColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.redColors500
   }
 }
 
@@ -47,8 +45,7 @@ const tsxUndefined = {
   name: 'tsx::undefined',
   scope: ['constant.language.undefined.tsx'],
   settings: {
-    foreground: colors.purpleColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.purpleColors500
   }
 }
 

@@ -11,7 +11,6 @@ const tsComment = {
     'comment.line.shebang.ts'
   ],
   settings: {
-    fontStyle: 'italic',
     foreground: colors.grayColors800
   }
 }

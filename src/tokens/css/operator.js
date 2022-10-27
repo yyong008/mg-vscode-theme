@@ -11,8 +11,7 @@ const operator = {
     'keyword.other.important.lcss'
   ],
   settings: {
-    foreground: colors.redColors800,
-    fontStyle: 'italic bold'
+    foreground: colors.redColors800
   }
 }
 

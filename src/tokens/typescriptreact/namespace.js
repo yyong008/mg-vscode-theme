@@ -4,8 +4,7 @@ const tsxInterface = {
   name: 'tsx::namespace',
   scope: ['storage.type.namespace.tsx'],
   settings: {
-    foreground: colors.purpleColors400,
-    fontStyle: 'italic bold'
+    foreground: colors.purpleColors400
   }
 }
 

@@ -4,8 +4,7 @@ const tsEscape = {
   name: 'ts::escape',
   scope: ['constant.character.escape.ts'],
   settings: {
-    foreground: colors.cyanColors600,
-    fontStyle: 'bold italic'
+    foreground: colors.cyanColors600
   }
 }
 

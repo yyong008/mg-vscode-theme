@@ -4,8 +4,7 @@ const tsClass = {
   name: 'ts::class',
   scope: ['storage.type.class.ts'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.goldColors500
+    foreground: colors.purpleColors400
   }
 }
 
@@ -13,8 +12,7 @@ const tsClassEntity = {
   name: 'ts::class::entity',
   scope: ['entity.name.type.class.ts'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.limeColors500
+    foreground: colors.cyanColors600
   }
 }
 
@@ -22,8 +20,7 @@ const tsThis = {
   name: 'ts::this',
   scope: ['variable.language.this.ts'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.redColors600
+    foreground: colors.volcanoColors600
   }
 }
 
@@ -32,7 +29,7 @@ const tsClassProps = {
   scope: ['variable.object.property.ts'],
   settings: {
     fontStyle: 'bold',
-    foreground: colors.blueColors400
+    foreground: colors.cyanColors400
   }
 }
 
@@ -50,7 +47,7 @@ const tsClassStaticProps = {
   scope: ['variable.object.property.ts'],
   settings: {
     fontStyle: 'bold',
-    foreground: colors.greenColors300
+    foreground: colors.cyanColors200
   }
 }
 
@@ -58,7 +55,7 @@ const tsInherited = {
   name: 'ts::inherited',
   scope: ['entity.other.inherited-class.ts'],
   settings: {
-    foreground: colors.greenColors500
+    foreground: colors.cyanColors300
   }
 }
 

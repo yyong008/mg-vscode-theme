@@ -4,8 +4,7 @@ const tsxEnum = {
   name: 'tsx::enum',
   scope: ['storage.type.enum.tsx'],
   settings: {
-    foreground: colors.purpleColors300,
-    fontStyle: 'bold italic'
+    foreground: colors.purpleColors300
   }
 }
 

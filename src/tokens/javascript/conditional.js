@@ -4,8 +4,7 @@ const jsDitional = {
   name: 'js::conditional',
   scope: ['keyword.control.conditional.js'],
   settings: {
-    foreground: colors.magentaColors600,
-    fontStyle: 'italic'
+    foreground: colors.magentaColors600
   }
 }
 

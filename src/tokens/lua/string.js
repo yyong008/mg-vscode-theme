@@ -8,8 +8,7 @@ const luaString = {
     'string.quoted.double.lua'
   ],
   settings: {
-    foreground: colors.greenColors300,
-    fonluatyle: 'italic'
+    foreground: colors.greenColors300
   }
 }
 

@@ -4,8 +4,7 @@ const jsClass = {
   name: 'js::class',
   scope: ['storage.type.class.js'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.goldColors500
+    foreground: colors.purpleColors400
   }
 }
 
@@ -13,8 +12,7 @@ const jsClassEntity = {
   name: 'js::class::entity',
   scope: ['entity.name.type.class.js'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.limeColors500
+    foreground: colors.cyanColors600
   }
 }
 
@@ -22,8 +20,7 @@ const jsThis = {
   name: 'js::this',
   scope: ['variable.language.this.js'],
   settings: {
-    fontStyle: 'italic',
-    foreground: colors.redColors600
+    foreground: colors.volcanoColors600
   }
 }
 
@@ -41,7 +38,7 @@ const jsClassStatickeyWord = {
   scope: ['storage.modifier.js'],
   settings: {
     fontStyle: 'bold',
-    foreground: colors.purpleColors400
+    foreground: colors.cyanColors400
   }
 }
 
@@ -50,7 +47,7 @@ const jsClassStaticProps = {
   scope: ['variable.object.property.js'],
   settings: {
     fontStyle: 'bold',
-    foreground: colors.greenColors300
+    foreground: colors.cyanColors300
   }
 }
 

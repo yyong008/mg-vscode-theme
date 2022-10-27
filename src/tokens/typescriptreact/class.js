@@ -4,7 +4,6 @@ const tsxClass = {
   name: 'tsx::class',
   scope: ['storage.type.class.tsx'],
   settings: {
-    fontStyle: 'italic',
     foreground: colors.goldColors500
   }
 }
@@ -13,7 +12,6 @@ const tsxClassEntity = {
   name: 'tsx::class::entity',
   scope: ['entity.name.type.class.tsx'],
   settings: {
-    fontStyle: 'italic',
     foreground: colors.limeColors500
   }
 }
@@ -22,7 +20,6 @@ const tsxThis = {
   name: 'tsx::this',
   scope: ['variable.language.this.tsx'],
   settings: {
-    fontStyle: 'italic',
     foreground: colors.redColors600
   }
 }

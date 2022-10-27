@@ -13,7 +13,7 @@ const jsFunctionParams = {
   name: 'js::params',
   scope: ['variable.parameter.js'],
   settings: {
-    foreground: colors.goldColors600
+    foreground: colors.grayColors400
   }
 }
 
@@ -21,7 +21,7 @@ const jsArrowFunction = {
   name: 'js::arrow',
   scope: ['storage.type.function.arrow.js'],
   settings: {
-    foreground: colors.blueColors500
+    foreground: colors.cyanColors700
   }
 }
 
@@ -29,7 +29,7 @@ const jsEntityFunctionAndCallParams = {
   name: 'js::entity-function-call',
   scope: ['entity.name.function.js', 'meta.function-call.js'],
   settings: {
-    foreground: colors.blueColors500
+    foreground: colors.cyanColors700
   }
 }
 

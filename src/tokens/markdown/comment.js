@@ -7,7 +7,6 @@ const markdownComments = {
     'comment.line.number-sign.shell'
   ],
   settings: {
-    fontStyle: 'blod italic',
     foreground: colors.purpleColors400
   }
 }

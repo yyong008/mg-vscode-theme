@@ -4,8 +4,7 @@ const tsLabel = {
   name: 'ts::label',
   scope: ['entity.name.label.ts'],
   settings: {
-    foreground: colors.purpleColors400,
-    fontStyle: 'italic bold'
+    foreground: colors.purpleColors400
   }
 }
 

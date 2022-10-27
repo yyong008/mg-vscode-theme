@@ -8,8 +8,7 @@ const cssClassAndId = {
     'entity.other.attribute-name.id.css'
   ],
   settings: {
-    foreground: colors.greenColors400,
-    fontStyle: 'bold italic'
+    foreground: colors.greenColors400
   }
 }
 

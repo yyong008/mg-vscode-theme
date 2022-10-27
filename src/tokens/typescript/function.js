@@ -13,7 +13,7 @@ const tsFunctionParams = {
   name: 'ts::params',
   scope: ['variable.parameter.ts'],
   settings: {
-    foreground: colors.goldColors600
+    foreground: colors.grayColors400
   }
 }
 
@@ -21,7 +21,7 @@ const tsArrowFunction = {
   name: 'ts::arrow',
   scope: ['storage.type.function.arrow.ts'],
   settings: {
-    foreground: colors.blueColors500
+    foreground: colors.cyanColors700
   }
 }
 
@@ -29,7 +29,7 @@ const tsEntityFunctionAndCallParams = {
   name: 'ts::entity-function-call',
   scope: ['entity.name.function.ts', 'meta.function-call.ts'],
   settings: {
-    foreground: colors.blueColors500
+    foreground: colors.cyanColors700
   }
 }
 

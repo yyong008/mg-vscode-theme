@@ -7,7 +7,7 @@ const jsonKey = {
     'support.type.property-name.json.comments'
   ],
   settings: {
-    foreground: colors.cyanColors400
+    foreground: colors.cyanColors300
   }
 }
 
@@ -15,7 +15,7 @@ const jsonValue = {
   name: 'json::value',
   scope: ['string.quoted.double.json'],
   settings: {
-    foreground: colors.goldColors500
+    foreground: colors.cyanColors800
   }
 }
 

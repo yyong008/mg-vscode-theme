@@ -4,7 +4,7 @@ const tsx = {
   name: 'tsx::tag',
   scope: ['entity.name.tag.tsx'],
   settings: {
-    foreground: colors.greenColors300
+    foreground: colors.cyanColors300
   }
 }
 
@@ -12,7 +12,7 @@ const tsxProps = {
   name: 'tsx:::tag::props',
   scope: ['entity.other.attribute-name.tsx'],
   settings: {
-    foreground: colors.greenColors700
+    foreground: colors.cyanColors700
   }
 }
 
@@ -24,8 +24,15 @@ const spunctuation = {
     'punctuation.separator.key-value.tsx'
   ],
   settings: {
-    foreground: colors.greenColors800
+    foreground: colors.cyanColors800
   }
 }
 
-export default [tsx, tsxProps, spunctuation]
+const typeKeyword = {
+  name: 'tsx::spunctuation',
+  scope: ['keyword.control.type.tsx'],
+  settings: {
+    foreground: colors.cyanColors800
+  }
+}
+export default [tsx, tsxProps, spunctuation, typeKeyword]

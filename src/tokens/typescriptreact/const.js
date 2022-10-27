@@ -4,8 +4,7 @@ const cnst = {
   name: 'tsx::const/let/var',
   scope: ['storage.type.tsx'],
   settings: {
-    foreground: colors.volcanoColors700,
-    fontStyle: 'bold'
+    foreground: colors.cyanColors100
   }
 }
 

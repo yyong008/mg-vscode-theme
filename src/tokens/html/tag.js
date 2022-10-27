@@ -4,7 +4,7 @@ const htmlTag = {
   name: 'html::tag',
   scope: ['entity.name.tag.html', 'support.class.component.astro'],
   settings: {
-    foreground: colors.greenColors400,
+    foreground: colors.cyanColors400,
     fontStyle: 'bold'
   }
 }
@@ -13,7 +13,7 @@ const tagProps = {
   name: 'html::tagProps',
   scope: ['entity.other.attribute-name.html', 'string.quoted.double.html'],
   settings: {
-    foreground: colors.goldColors300
+    foreground: colors.cyanColors300
   }
 }
 
@@ -40,7 +40,7 @@ const spunctuation = {
     'punctuation.definition.tag.end.html'
   ],
   settings: {
-    foreground: colors.greenColors800
+    foreground: colors.cyanColors800
   }
 }
 

@@ -13,8 +13,7 @@ const styleConstantsValue = {
   name: 'style::props',
   scope: ['constant.numeric.css'],
   settings: {
-    foreground: colors.limeColors600,
-    fontStyle: 'italic'
+    foreground: colors.limeColors600
   }
 }
 
@@ -22,8 +21,7 @@ const styleCssVariables = {
   name: 'style::props',
   scope: ['support.function.misc.css', 'variable.argument.css'],
   settings: {
-    foreground: colors.volcanoColors500,
-    fontStyle: 'italic'
+    foreground: colors.volcanoColors500
   }
 }
 
@@ -36,8 +34,7 @@ const styleHover = {
     'meta.property-value.css'
   ],
   settings: {
-    foreground: colors.volcanoColors500,
-    fontStyle: 'italic'
+    foreground: colors.volcanoColors500
   }
 }
 
@@ -45,8 +42,7 @@ const stylePseudo = {
   name: 'style::props::pseudo',
   scope: ['entity.other.attribute-name.pseudo-element.css'],
   settings: {
-    foreground: colors.volcanoColors500,
-    fontStyle: 'italic'
+    foreground: colors.volcanoColors500
   }
 }
 

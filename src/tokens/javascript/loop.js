@@ -4,8 +4,7 @@ const jsLoop = {
   name: 'js::loop',
   scope: ['keyword.control.loop.js', 'keyword.operator.expression.of.js'],
   settings: {
-    foreground: colors.purpleColors400,
-    fontStyle: 'italic bold'
+    foreground: colors.purpleColors400
   }
 }
 

@@ -4,7 +4,7 @@ const jsTemplate = {
   name: 'js::template',
   scope: ['string.template.js'],
   settings: {
-    foreground: colors.brandColors600
+    foreground: colors.grayColors200
   }
 }
 

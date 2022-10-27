@@ -4,8 +4,7 @@ const luaDitional = {
   name: 'lua::conditional',
   scope: ['keyword.control.lua'],
   settings: {
-    foreground: colors.magentaColors600,
-    fonluatyle: 'italic'
+    foreground: colors.magentaColors600
   }
 }
 

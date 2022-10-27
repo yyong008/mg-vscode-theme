@@ -4,8 +4,7 @@ const luaEscape = {
   name: 'luaEscape',
   scope: ['constant.character.escape.lua'],
   settings: {
-    foreground: colors.cyanColors600,
-    fonluatyle: 'bold italic'
+    foreground: colors.cyanColors600
   }
 }
 

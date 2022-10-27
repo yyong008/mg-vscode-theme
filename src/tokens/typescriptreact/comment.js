@@ -11,7 +11,6 @@ const tsxComment = {
     'comment.line.shebang.tsx'
   ],
   settings: {
-    fontStyle: 'italic',
     foreground: colors.grayColors800
   }
 }

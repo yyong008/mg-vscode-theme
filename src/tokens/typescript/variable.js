@@ -29,8 +29,7 @@ const tsTrue = {
   name: 'ts::variable',
   scope: ['constant.language.boolean.true.ts'],
   settings: {
-    foreground: colors.greenColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.greenColors500
   }
 }
 
@@ -38,8 +37,7 @@ const tsFalse = {
   name: 'ts::variable',
   scope: ['constant.language.boolean.false.ts'],
   settings: {
-    foreground: colors.redColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.redColors500
   }
 }
 
@@ -47,8 +45,7 @@ const tsUndefined = {
   name: 'ts::undefined',
   scope: ['constant.language.undefined.ts'],
   settings: {
-    foreground: colors.purpleColors500,
-    fontStyle: 'bold italic underline'
+    foreground: colors.purpleColors500
   }
 }
 

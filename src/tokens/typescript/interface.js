@@ -4,8 +4,7 @@ const tsInterface = {
   name: 'ts::interface',
   scope: ['storage.type.interface.ts'],
   settings: {
-    foreground: colors.purpleColors400,
-    fontStyle: 'italic bold'
+    foreground: colors.purpleColors400
   }
 }
 

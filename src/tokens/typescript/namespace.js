@@ -4,8 +4,7 @@ const tsInterface = {
   name: 'ts::namespace',
   scope: ['storage.type.namespace.ts'],
   settings: {
-    foreground: colors.purpleColors400,
-    fontStyle: 'italic bold'
+    foreground: colors.purpleColors400
   }
 }
 

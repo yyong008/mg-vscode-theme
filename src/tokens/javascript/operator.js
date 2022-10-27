@@ -1,4 +1,3 @@
-// string.template.js
 import colors from '../../designs/index.js'
 
 const jsOperator = {
@@ -24,7 +23,6 @@ const jsOperator = {
     'keyword.operator.expression.in.js',
     'keyword.operator.expression.void.js',
     'punctuation.accessor.optional.js',
-    'punctuation.separator.comma.js',
     'keyword.generator.asterisk.js',
     'keyword.control.as.js',
     'keyword.control.switch.ts',

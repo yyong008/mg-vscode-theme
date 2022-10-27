@@ -4,8 +4,7 @@ const tsxTemplate = {
   name: 'tsx::template',
   scope: ['string.template.tsx'],
   settings: {
-    foreground: colors.brandColors600,
-    fontStyle: 'italic underline'
+    foreground: colors.brandColors600
   }
 }
 

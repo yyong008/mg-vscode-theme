@@ -8,7 +8,6 @@ const luaComment = {
     'comment.block.lua'
   ],
   settings: {
-    fonluatyle: 'italic',
     foreground: colors.grayColors800
   }
 }

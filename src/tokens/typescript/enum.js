@@ -4,8 +4,7 @@ const tsEnum = {
   name: 'ts::enum',
   scope: ['storage.type.enum.ts'],
   settings: {
-    foreground: colors.purpleColors300,
-    fontStyle: 'bold italic'
+    foreground: colors.purpleColors300
   }
 }
 
