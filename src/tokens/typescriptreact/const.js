@@ -2,7 +2,7 @@ import colors from '../../designs/index.js'
 
 const cnst = {
   name: 'tsx::const/let/var',
-  scope: ['storage.type.tsx'],
+  scope: ['storage.type.jsx', 'storage.type.tsx'],
   settings: {
     foreground: colors.cyanColors100
   }

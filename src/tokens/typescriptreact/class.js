@@ -18,7 +18,7 @@ const tsxClassEntity = {
 
 const tsxThis = {
   name: 'tsx::this',
-  scope: ['variable.language.this.tsx'],
+  scope: ['variable.language.this.tsx', 'variable.language.this.jsx'],
   settings: {
     foreground: colors.redColors600
   }
@@ -26,7 +26,7 @@ const tsxThis = {
 
 const tsxClassProps = {
   name: 'tsx::class::props',
-  scope: ['variable.object.property.tsx'],
+  scope: ['variable.object.property.tsx', 'variable.object.property.jsx'],
   settings: {
     fontStyle: 'bold',
     foreground: colors.blueColors400
@@ -35,7 +35,7 @@ const tsxClassProps = {
 
 const tsxClassStatickeyWord = {
   name: 'tsx::class::static',
-  scope: ['storage.modifier.tsx'],
+  scope: ['storage.modifier.tsx', 'storage.modifier.jsx'],
   settings: {
     fontStyle: 'bold',
     foreground: colors.purpleColors400
@@ -44,7 +44,7 @@ const tsxClassStatickeyWord = {
 
 const tsxClassStaticProps = {
   name: 'tsx::class::static::props',
-  scope: ['variable.object.property.tsx'],
+  scope: ['variable.object.property.tsx', 'variable.object.property.jsx'],
   settings: {
     fontStyle: 'bold',
     foreground: colors.greenColors300
@@ -53,7 +53,10 @@ const tsxClassStaticProps = {
 
 const tsxInherited = {
   name: 'tsx::class::inherited',
-  scope: ['entity.other.inherited-class.tsx'],
+  scope: [
+    'entity.other.inherited-class.tsx',
+    'entity.other.inherited-class.jsx'
+  ],
   settings: {
     foreground: colors.greenColors500
   }

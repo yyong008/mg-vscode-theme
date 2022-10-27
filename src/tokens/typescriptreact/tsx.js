@@ -30,7 +30,7 @@ const spunctuation = {
 
 const typeKeyword = {
   name: 'tsx::spunctuation',
-  scope: ['keyword.control.type.tsx'],
+  scope: ['keyword.control.type.tsx', 'keyword.control.type.jsx'],
   settings: {
     foreground: colors.cyanColors800
   }

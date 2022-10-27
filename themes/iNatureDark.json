@@ -2022,4 +2022,89 @@
       }
     }
   ]
+}lua::string",
+      "scope": [
+        "string.quoted.single.lua",
+        "string.quoted.other.multiline.lua",
+        "string.quoted.double.lua"
+      ],
+      "settings": {
+        "foreground": "#b7eb8f",
+        "fonluatyle": "italic"
+      }
+    },
+    {
+      "name": "lua::loop",
+      "scope": [
+        "keyword.control.loop.lua",
+        "keyword.operator.expression.of.lua"
+      ],
+      "settings": {
+        "foreground": "#b37feb",
+        "fonluatyle": "italic bold"
+      }
+    },
+    {
+      "name": "luaEscape",
+      "scope": [
+        "constant.character.escape.lua"
+      ],
+      "settings": {
+        "foreground": "#13c2c2",
+        "fonluatyle": "bold italic"
+      }
+    },
+    {
+      "name": "lua::regexp",
+      "scope": [
+        "string.regexp.lua"
+      ],
+      "settings": {
+        "foreground": "#b37feb"
+      }
+    },
+    {
+      "name": "vue::bind",
+      "scope": [
+        "punctuation.attribute-shorthand.bind.html.vue",
+        "keyword.control.conditional.vue"
+      ],
+      "settings": {
+        "foreground": "#ffd6e7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "vue::slot",
+      "scope": [
+        "punctuation.attribute-shorthand.slot.html.vue",
+        "entity.other.attribute-name.html.vue"
+      ],
+      "settings": {
+        "foreground": "#fffb8f"
+      }
+    },
+    {
+      "name": "vue::scriptTag",
+      "scope": [
+        "entity.name.tag.template.html.vue",
+        "entity.name.tag.script.html.vue",
+        "entity.name.tag.style.html.vue"
+      ],
+      "settings": {
+        "foreground": "#95de64",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "vue::shortEvent",
+      "scope": [
+        "punctuation.attribute-shorthand.event.html.vue"
+      ],
+      "settings": {
+        "foreground": "#95de64",
+        "fontStyle": "bold"
+      }
+    }
+  ]
 }

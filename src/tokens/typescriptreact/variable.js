@@ -2,7 +2,7 @@ import colors from '../../designs/index.js'
 
 const tsxVariable = {
   name: 'tsx::variable',
-  scope: ['variable.other.constant.tsx'],
+  scope: ['variable.other.constant.tsx', 'variable.other.constant.jsx'],
   settings: {
     foreground: colors.greenColors500,
     fontStyle: 'bold'
@@ -11,7 +11,10 @@ const tsxVariable = {
 
 const tsxRuntimeGlobalVariable = {
   name: 'tsx::global::variable',
-  scope: ['variable.other.constant.object.tsx'],
+  scope: [
+    'variable.other.constant.object.tsx',
+    'variable.other.constant.object.jsx'
+  ],
   settings: {
     foreground: colors.blueColors500
   }
@@ -19,7 +22,10 @@ const tsxRuntimeGlobalVariable = {
 
 const tsxNewTarget = {
   name: 'tsx::variable',
-  scope: ['support.variable.property.target.tsx'],
+  scope: [
+    'support.variable.property.target.tsx',
+    'support.variable.property.target.jsx'
+  ],
   settings: {
     foreground: colors.blueColors500
   }
@@ -27,7 +33,10 @@ const tsxNewTarget = {
 
 const tsxTrue = {
   name: 'tsx::true',
-  scope: ['constant.language.boolean.true.tsx'],
+  scope: [
+    'constant.language.boolean.true.tsx',
+    'constant.language.boolean.true.jsx'
+  ],
   settings: {
     foreground: colors.greenColors500
   }
@@ -35,7 +44,10 @@ const tsxTrue = {
 
 const tsxFalse = {
   name: 'tsx::false',
-  scope: ['constant.language.boolean.false.tsx'],
+  scope: [
+    'constant.language.boolean.false.tsx',
+    'constant.language.boolean.false.jsx'
+  ],
   settings: {
     foreground: colors.redColors500
   }
@@ -43,7 +55,7 @@ const tsxFalse = {
 
 const tsxUndefined = {
   name: 'tsx::undefined',
-  scope: ['constant.language.undefined.tsx'],
+  scope: ['constant.language.undefined.tsx', 'constant.language.undefined.jsx'],
   settings: {
     foreground: colors.purpleColors500
   }
@@ -51,7 +63,7 @@ const tsxUndefined = {
 
 const tsxNumber = {
   name: 'tsx::numeric',
-  scope: ['constant.numeric.decimal.tsx'],
+  scope: ['constant.numeric.decimal.tsx', 'constant.numeric.decimal.jsx'],
   settings: {
     foreground: colors.blueColors500,
     fontStyle: 'bold underline'
@@ -60,7 +72,7 @@ const tsxNumber = {
 
 const tsxNull = {
   name: 'tsx::null',
-  scope: ['constant.language.null.tsx'],
+  scope: ['constant.language.null.tsx', 'constant.language.null.tsx'],
   settings: {
     foreground: colors.magentaColors500,
     fontStyle: 'bold underline'

@@ -2,7 +2,12 @@ import colors from '../../designs/index.js'
 
 const tsxLoop = {
   name: 'tsx::loop',
-  scope: ['keyword.control.loop.tsx', 'keyword.operator.expression.of.tsx'],
+  scope: [
+    'keyword.control.loop.tsx',
+    'keyword.operator.expression.of.tsx',
+    'keyword.control.loop.jsx',
+    'keyword.operator.expression.of.jsx'
+  ],
   settings: {
     foreground: colors.purpleColors400
   }
