@@ -11,7 +11,7 @@ const punctuation = {
     'punctuation.definition.string.template.end.ts'
   ],
   settings: {
-    foreground: colors.grayColors1000,
+    foreground: colors.magentaColors500,
     fontStyle: 'italic bold'
   }
 }

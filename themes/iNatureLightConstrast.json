@@ -96,7 +96,7 @@
     "tab.activeBackground": "#1f1f1f",
     "tab.inactiveBackground": "#434343",
     "tab.border": "#434343",
-    "tab.inactiveForeground": "#faad14",
+    "tab.inactiveForeground": "#08979c",
     "tab.activeForeground": "#5cdbd3",
     "tab.lastPinnedBorder": "#5cdbd3",
     "tab.activeBorder": "#5cdbd3",
@@ -126,33 +126,24 @@
   },
   "tokenColors": [
     {
-      "name": "js:import/from",
+      "name": "js::keywords::import/from/export/default",
       "scope": [
         "keyword.control.import.js",
         "keyword.control.from.js",
-        "keyword.control.export.js"
+        "keyword.control.export.js",
+        "keyword.control.default.js"
       ],
       "settings": {
-        "foreground": "#f0f0f0"
+        "foreground": "#bfbfbf"
       }
     },
     {
-      "name": "js::from-content",
+      "name": "js::variable::import-content",
       "scope": [
         "meta.import.js"
       ],
       "settings": {
         "foreground": "#5cdbd3"
-      }
-    },
-    {
-      "name": "js::default-string",
-      "scope": [
-        "keyword.control.default.js"
-      ],
-      "settings": {
-        "foreground": "#5cdbd3",
-        "fontStyle": "bold"
       }
     },
     {
@@ -190,8 +181,8 @@
         "storage.type.js"
       ],
       "settings": {
-        "foreground": "#d4380d",
-        "fontStyle": "bold"
+        "foreground": "#ffffff",
+        "fontStyle": "bold italic"
       }
     },
     {
@@ -201,6 +192,7 @@
         "keyword.control.flow.js"
       ],
       "settings": {
+        "foreground": "#ff85c0",
         "fontStyle": "bold"
       }
     },
@@ -269,7 +261,7 @@
         "variable.other.constant.js"
       ],
       "settings": {
-        "foreground": "#73d13d",
+        "foreground": "#13c2c2",
         "fontStyle": "bold"
       }
     },
@@ -341,7 +333,7 @@
         "meta.object-literal.key.js"
       ],
       "settings": {
-        "foreground": "#ffd591"
+        "foreground": "#bfbfbf"
       }
     },
     {
@@ -350,7 +342,7 @@
         "string.quoted.single.js"
       ],
       "settings": {
-        "foreground": "#b7eb8f"
+        "foreground": "#bfbfbf"
       }
     },
     {
@@ -455,7 +447,7 @@
         "punctuation.definition.string.template.end.ts"
       ],
       "settings": {
-        "foreground": "#262626",
+        "foreground": "#f759ab",
         "fontStyle": "italic bold"
       }
     },
@@ -1520,7 +1512,7 @@
         "support.type.property-name.json.comments"
       ],
       "settings": {
-        "foreground": "#95de64"
+        "foreground": "#5cdbd3"
       }
     },
     {

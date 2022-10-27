@@ -8,7 +8,7 @@ const tab = {
   ['tab.unfocusedActiveBackground']: '',
   ['tab.inactiveBackground']: colors.grayColors900,
   ['tab.border']: colors.grayColors900,
-  ['tab.inactiveForeground']: colors.goldColors600,
+  ['tab.inactiveForeground']: colors.cyanColors700,
   ['tab.activeForeground']: colors.cyanColors400,
   ['tab.lastPinnedBorder']: colors.cyanColors400,
   ['tab.activeBorder']: colors.cyanColors400,

@@ -7,7 +7,7 @@ const jsonKey = {
     'support.type.property-name.json.comments'
   ],
   settings: {
-    foreground: colors.greenColors400
+    foreground: colors.cyanColors400
   }
 }
 

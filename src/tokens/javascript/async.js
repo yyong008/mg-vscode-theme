@@ -4,7 +4,7 @@ const asyncAwait = {
   name: 'js::async-await',
   scope: ['storage.modifier.async.js', 'keyword.control.flow.js'],
   settings: {
-    foreground: colors.brandColors800,
+    foreground: colors.magentaColors400,
     fontStyle: 'bold'
   }
 }

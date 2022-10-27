@@ -4,7 +4,7 @@ const jsObject = {
   name: 'js::object::props',
   scope: ['meta.object-literal.key.js'],
   settings: {
-    foreground: colors.orangeColors300
+    foreground: colors.grayColors600
   }
 }
 

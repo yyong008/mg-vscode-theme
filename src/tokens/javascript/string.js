@@ -4,7 +4,7 @@ const jsString = {
   name: 'js::string',
   scope: ['string.quoted.single.js'],
   settings: {
-    foreground: colors.greenColors300
+    foreground: colors.grayColors600
   }
 }
 

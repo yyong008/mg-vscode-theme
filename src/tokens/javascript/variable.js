@@ -4,7 +4,7 @@ const jsVariable = {
   name: 'js::variable',
   scope: ['variable.other.constant.js'],
   settings: {
-    foreground: colors.greenColors500,
+    foreground: colors.cyanColors600,
     fontStyle: 'bold'
   }
 }

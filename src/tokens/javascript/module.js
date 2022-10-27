@@ -1,31 +1,23 @@
 import colors from '../../designs/index.js'
 
-const jsImportFrom = {
-  name: 'js:import/from',
+const jsImportFromExportDefault = {
+  name: 'js::keywords::import/from/export/default',
   scope: [
     'keyword.control.import.js',
     'keyword.control.from.js',
-    'keyword.control.export.js'
+    'keyword.control.export.js',
+    'keyword.control.default.js'
   ],
   settings: {
-    foreground: colors.grayColors400
+    foreground: colors.grayColors600
   }
 }
 
 const jsFromStringKeyword = {
-  name: 'js::from-content',
+  name: 'js::variable::import-content',
   scope: ['meta.import.js'],
   settings: {
     foreground: colors.cyanColors400
-  }
-}
-
-const jsDefaultStringKeyword = {
-  name: 'js::default-string',
-  scope: ['keyword.control.default.js'],
-  settings: {
-    foreground: colors.cyanColors400,
-    fontStyle: 'bold'
   }
 }
 
@@ -52,10 +44,10 @@ const jsDynamicImport = {
     foreground: colors.magentaColors500
   }
 }
+
 export default [
-  jsImportFrom,
+  jsImportFromExportDefault,
   jsFromStringKeyword,
-  jsDefaultStringKeyword,
   jsImportVariables,
   jsVariableOtherReadwriteAlias,
   jsDynamicImport
