@@ -6,7 +6,7 @@ const tsImportFrom = {
     'keyword.control.import.ts',
     'keyword.control.from.ts',
     'keyword.control.export.ts',
-    'keyword.control.default.js'
+    'keyword.control.default.ts'
   ],
   settings: {
     foreground: colors.grayColors100

@@ -1,12 +1,13 @@
 import colors from '../../designs/index.js'
 
 const tsxImportFrom = {
-  name: 'tsx::import/from',
+  name: 'tsx::module::import/from/export/default',
   scope: [
     'keyword.control.import.tsx',
     'keyword.control.from.tsx',
     'keyword.control.export.tsx',
     'keyword.control.default.tsx',
+    // jsx
     'keyword.control.import.jsx',
     'keyword.control.from.jsx',
     'keyword.control.export.jsx',

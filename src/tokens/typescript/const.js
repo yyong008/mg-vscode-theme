@@ -4,8 +4,7 @@ const cnst = {
   name: 'ts::const/let/var',
   scope: ['storage.type.ts'],
   settings: {
-    foreground: colors.volcanoColors700,
-    fontStyle: 'bold'
+    foreground: colors.grayColors200
   }
 }
 

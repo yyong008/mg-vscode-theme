@@ -47,7 +47,7 @@ const tsxClassStaticProps = {
   scope: ['variable.object.property.tsx', 'variable.object.property.jsx'],
   settings: {
     fontStyle: 'bold',
-    foreground: colors.greenColors300
+    foreground: colors.grayColors200
   }
 }
 

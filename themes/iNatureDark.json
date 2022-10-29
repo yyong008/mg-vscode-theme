@@ -260,8 +260,7 @@
         "variable.other.constant.js"
       ],
       "settings": {
-        "foreground": "#13c2c2",
-        "fontStyle": "bold"
+        "foreground": "#13c2c2"
       }
     },
     {
@@ -336,7 +335,8 @@
     {
       "name": "js::string",
       "scope": [
-        "string.quoted.single.js"
+        "string.quoted.single.js",
+        "string.quoted.double.js"
       ],
       "settings": {
         "foreground": "#bfbfbf"
@@ -465,7 +465,7 @@
         "keyword.control.import.ts",
         "keyword.control.from.ts",
         "keyword.control.export.ts",
-        "keyword.control.default.js"
+        "keyword.control.default.ts"
       ],
       "settings": {
         "foreground": "#ffffff"
@@ -533,8 +533,7 @@
         "storage.type.ts"
       ],
       "settings": {
-        "foreground": "#d4380d",
-        "fontStyle": "bold"
+        "foreground": "#fafafa"
       }
     },
     {
@@ -612,8 +611,7 @@
         "variable.other.constant.ts"
       ],
       "settings": {
-        "foreground": "#73d13d",
-        "fontStyle": "bold"
+        "foreground": "#13c2c2"
       }
     },
     {
@@ -734,16 +732,17 @@
         "meta.object-literal.key.ts"
       ],
       "settings": {
-        "foreground": "#ffd591"
+        "foreground": "#ffffff"
       }
     },
     {
       "name": "ts::string)",
       "scope": [
-        "string.quoted.single.ts"
+        "string.quoted.single.ts",
+        "string.quoted.double.ts"
       ],
       "settings": {
-        "foreground": "#b7eb8f"
+        "foreground": "#bfbfbf"
       }
     },
     {
@@ -945,12 +944,16 @@
       }
     },
     {
-      "name": "tsx::import/from",
+      "name": "tsx::module::import/from/export/default",
       "scope": [
         "keyword.control.import.tsx",
         "keyword.control.from.tsx",
         "keyword.control.export.tsx",
-        "keyword.control.default.js"
+        "keyword.control.default.tsx",
+        "keyword.control.import.jsx",
+        "keyword.control.from.jsx",
+        "keyword.control.export.jsx",
+        "keyword.control.default.jsx"
       ],
       "settings": {
         "foreground": "#bfbfbf"
@@ -959,7 +962,8 @@
     {
       "name": "tsx::from-content",
       "scope": [
-        "meta.import.tsx"
+        "meta.import.tsx",
+        "meta.import.jsx"
       ],
       "settings": {
         "foreground": "#5cdbd3"
@@ -968,7 +972,8 @@
     {
       "name": "tsx::default-content",
       "scope": [
-        "keyword.control.default.tsx"
+        "keyword.control.default.tsx",
+        "keyword.control.default.jsx"
       ],
       "settings": {
         "foreground": "#5cdbd3"
@@ -978,7 +983,9 @@
       "name": "tsx::default-content",
       "scope": [
         "variable.other.readwrite.alias.tsx",
-        "variable.other.object.tsx"
+        "variable.other.object.tsx",
+        "variable.other.readwrite.alias.jsx",
+        "variable.other.object.jsx"
       ],
       "settings": {
         "foreground": "#5cdbd3"
@@ -988,7 +995,9 @@
       "name": "tsx::alias",
       "scope": [
         "variable.other.readwrite.alias.tsx",
-        "variable.other.readwrite.tsx"
+        "variable.other.readwrite.tsx",
+        "variable.other.readwrite.alias.jsx",
+        "variable.other.readwrite.jsx"
       ],
       "settings": {
         "foreground": "#87e8de"
@@ -997,7 +1006,8 @@
     {
       "name": "tsx::dynamic-import",
       "scope": [
-        "keyword.operator.expression.import.tsx"
+        "keyword.operator.expression.import.tsx",
+        "keyword.operator.expression.import.jsx"
       ],
       "settings": {
         "foreground": "#f759ab"
@@ -1006,7 +1016,8 @@
     {
       "name": "tsx::import-export/all",
       "scope": [
-        "constant.language.import-export-all.tsx"
+        "constant.language.import-export-all.tsx",
+        "constant.language.import-export-all.jsx"
       ],
       "settings": {
         "foreground": "#5cdbd3"
@@ -1015,6 +1026,7 @@
     {
       "name": "tsx::const/let/var",
       "scope": [
+        "storage.type.jsx",
         "storage.type.tsx"
       ],
       "settings": {
@@ -1022,10 +1034,12 @@
       }
     },
     {
-      "name": "tsx::async-await",
+      "name": "tsx/jsx::async-await",
       "scope": [
         "storage.modifier.async.tsx",
-        "keyword.control.flow.tsx"
+        "keyword.control.flow.tsx",
+        "storage.modifier.async.jsx",
+        "keyword.control.flow.jsx"
       ],
       "settings": {
         "foreground": "#ffffff"
@@ -1034,7 +1048,8 @@
     {
       "name": "tsx::function",
       "scope": [
-        "storage.type.function.tsx"
+        "storage.type.function.tsx",
+        "storage.type.function.jsx"
       ],
       "settings": {
         "foreground": "#b37feb",
@@ -1044,7 +1059,8 @@
     {
       "name": "tsx::params",
       "scope": [
-        "variable.parameter.tsx"
+        "variable.parameter.tsx",
+        "variable.parameter.jsx"
       ],
       "settings": {
         "foreground": "#fafafa"
@@ -1053,7 +1069,8 @@
     {
       "name": "tsx::arrow",
       "scope": [
-        "storage.type.function.arrow.tsx"
+        "storage.type.function.arrow.tsx",
+        "storage.type.function.arrow.jsx"
       ],
       "settings": {
         "foreground": "#36cfc9"
@@ -1063,7 +1080,9 @@
       "name": "tsx::entity-function-call",
       "scope": [
         "entity.name.function.tsx",
-        "meta.function-call.tsx"
+        "meta.function-call.tsx",
+        "entity.name.function.jsx",
+        "meta.function-call.jsx"
       ],
       "settings": {
         "foreground": "#36cfc9"
@@ -1072,12 +1091,17 @@
     {
       "name": "tsx::comment",
       "scope": [
+        "punctuation.definition.comment",
         "punctuation.definition.comment.tsx",
         "comment.block.documentation.tsx",
         "comment.line.double-slash.tsx",
-        "punctuation.definition.comment",
         "comment.block.tsx",
-        "comment.line.shebang.tsx"
+        "comment.line.shebang.tsx",
+        "punctuation.definition.comment.jsx",
+        "comment.block.documentation.jsx",
+        "comment.line.double-slash.jsx",
+        "comment.block.jsx",
+        "comment.line.shebang.jsx"
       ],
       "settings": {
         "foreground": "#595959"
@@ -1086,24 +1110,26 @@
     {
       "name": "tsx::template",
       "scope": [
-        "string.template.tsx"
+        "string.template.tsx",
+        "string.template.jsx"
       ],
       "settings": {}
     },
     {
       "name": "tsx::variable",
       "scope": [
-        "variable.other.constant.tsx"
+        "variable.other.constant.tsx",
+        "variable.other.constant.jsx"
       ],
       "settings": {
-        "foreground": "#73d13d",
-        "fontStyle": "bold"
+        "foreground": "#13c2c2"
       }
     },
     {
       "name": "tsx::global::variable",
       "scope": [
-        "variable.other.constant.object.tsx"
+        "variable.other.constant.object.tsx",
+        "variable.other.constant.object.jsx"
       ],
       "settings": {
         "foreground": "#40a9ff"
@@ -1112,7 +1138,8 @@
     {
       "name": "tsx::variable",
       "scope": [
-        "support.variable.property.target.tsx"
+        "support.variable.property.target.tsx",
+        "support.variable.property.target.jsx"
       ],
       "settings": {
         "foreground": "#40a9ff"
@@ -1121,7 +1148,8 @@
     {
       "name": "tsx::true",
       "scope": [
-        "constant.language.boolean.true.tsx"
+        "constant.language.boolean.true.tsx",
+        "constant.language.boolean.true.jsx"
       ],
       "settings": {
         "foreground": "#73d13d"
@@ -1130,7 +1158,8 @@
     {
       "name": "tsx::false",
       "scope": [
-        "constant.language.boolean.false.tsx"
+        "constant.language.boolean.false.tsx",
+        "constant.language.boolean.false.jsx"
       ],
       "settings": {
         "foreground": "#ff4d4f"
@@ -1139,7 +1168,8 @@
     {
       "name": "tsx::undefined",
       "scope": [
-        "constant.language.undefined.tsx"
+        "constant.language.undefined.tsx",
+        "constant.language.undefined.jsx"
       ],
       "settings": {
         "foreground": "#9254de"
@@ -1148,7 +1178,8 @@
     {
       "name": "tsx::numeric",
       "scope": [
-        "constant.numeric.decimal.tsx"
+        "constant.numeric.decimal.tsx",
+        "constant.numeric.decimal.jsx"
       ],
       "settings": {
         "foreground": "#40a9ff",
@@ -1158,6 +1189,7 @@
     {
       "name": "tsx::null",
       "scope": [
+        "constant.language.null.tsx",
         "constant.language.null.tsx"
       ],
       "settings": {
@@ -1197,7 +1229,37 @@
         "keyword.operator.optional.tsx",
         "keyword.operator.type.annotation.tsx",
         "keyword.operator.type.tsx",
-        "keyword.control.trycatch.ts"
+        "keyword.control.trycatch.tsx",
+        "keyword.operator.assignment.jsx",
+        "keyword.operator.comparison.jsx",
+        "keyword.operator.logical.jsx",
+        "keyword.operator.arithmetic.jsx",
+        "keyword.operator.expression.typeof.jsx",
+        "keyword.operator.expression.instanceof.jsx",
+        "keyword.operator.increment.jsx",
+        "keyword.operator.decrement.jsx",
+        "keyword.operator.relational.jsx",
+        "keyword.operator.expression.delete.jsx",
+        "keyword.operator.new.jsx",
+        "keyword.operator.bitwise.jsx",
+        "keyword.operator.bitwise.shift.jsx",
+        "keyword.operator.spread.jsx",
+        "keyword.operator.ternary.jsx",
+        "keyword.operator.assignment.compound.jsx",
+        "keyword.operator.assignment.compound.bitwise.jsx",
+        "keyword.operator.expression.in.jsx",
+        "keyword.operator.expression.void.jsx",
+        "punctuation.accessor.optional.jsx",
+        "punctuation.separator.comma.jsx",
+        "keyword.generator.asterisk.jsx",
+        "keyword.control.as.jsx",
+        "keyword.control.switch.jsx",
+        "keyword.control.switch.jsx",
+        "storage.type.property.jsx",
+        "keyword.operator.optional.jsx",
+        "keyword.operator.type.annotation.jsx",
+        "keyword.operator.type.jsx",
+        "keyword.control.trycatch.jsx"
       ],
       "settings": {
         "foreground": "#eb2f96",
@@ -1207,7 +1269,8 @@
     {
       "name": "tsx::conditional",
       "scope": [
-        "keyword.control.conditional.tsx"
+        "keyword.control.conditional.tsx",
+        "keyword.control.conditional.jsx"
       ],
       "settings": {
         "foreground": "#eb2f96"
@@ -1216,26 +1279,32 @@
     {
       "name": "tsx::object::props",
       "scope": [
-        "meta.object-literal.key.tsx"
+        "meta.object-literal.key.tsx",
+        "meta.object-literal.key.jsx"
       ],
       "settings": {
-        "foreground": "#ffd591"
+        "foreground": "#fafafa"
       }
     },
     {
       "name": "tsx::string",
       "scope": [
-        "string.quoted.single.tsx"
+        "string.quoted.single.tsx",
+        "string.quoted.single.jsx",
+        "string.quoted.double.tsx",
+        "string.quoted.double.jsx"
       ],
       "settings": {
-        "foreground": "#b7eb8f"
+        "foreground": "#bfbfbf"
       }
     },
     {
       "name": "tsx::loop",
       "scope": [
         "keyword.control.loop.tsx",
-        "keyword.operator.expression.of.tsx"
+        "keyword.operator.expression.of.tsx",
+        "keyword.control.loop.jsx",
+        "keyword.operator.expression.of.jsx"
       ],
       "settings": {
         "foreground": "#b37feb"
@@ -1244,7 +1313,8 @@
     {
       "name": "tsx::label",
       "scope": [
-        "entity.name.label.tsx"
+        "entity.name.label.tsx",
+        "entity.name.label.jsx"
       ],
       "settings": {
         "foreground": "#b37feb"
@@ -1253,6 +1323,7 @@
     {
       "name": "tsx:escape",
       "scope": [
+        "constant.character.escape.jsx",
         "constant.character.escape.tsx"
       ],
       "settings": {
@@ -1280,7 +1351,8 @@
     {
       "name": "tsx::this",
       "scope": [
-        "variable.language.this.tsx"
+        "variable.language.this.tsx",
+        "variable.language.this.jsx"
       ],
       "settings": {
         "foreground": "#f5222d"
@@ -1289,7 +1361,8 @@
     {
       "name": "tsx::class::props",
       "scope": [
-        "variable.object.property.tsx"
+        "variable.object.property.tsx",
+        "variable.object.property.jsx"
       ],
       "settings": {
         "fontStyle": "bold",
@@ -1299,7 +1372,8 @@
     {
       "name": "tsx::class::static",
       "scope": [
-        "storage.modifier.tsx"
+        "storage.modifier.tsx",
+        "storage.modifier.jsx"
       ],
       "settings": {
         "fontStyle": "bold",
@@ -1309,17 +1383,19 @@
     {
       "name": "tsx::class::static::props",
       "scope": [
-        "variable.object.property.tsx"
+        "variable.object.property.tsx",
+        "variable.object.property.jsx"
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#b7eb8f"
+        "foreground": "#fafafa"
       }
     },
     {
       "name": "tsx::class::inherited",
       "scope": [
-        "entity.other.inherited-class.tsx"
+        "entity.other.inherited-class.tsx",
+        "entity.other.inherited-class.jsx"
       ],
       "settings": {
         "foreground": "#73d13d"
@@ -1396,7 +1472,7 @@
         "entity.name.type.alias.tsx"
       ],
       "settings": {
-        "foreground": "#91d5ff",
+        "foreground": "#13c2c2",
         "fontStyle": "bold"
       }
     },
@@ -1416,14 +1492,15 @@
         "storage.type.type.tsx"
       ],
       "settings": {
-        "foreground": "#40a9ff",
-        "fontStyle": "bold"
+        "foreground": "#13c2c2",
+        "fontStyle": "bold italic"
       }
     },
     {
       "name": "tsx::regexp",
       "scope": [
-        "string.regexp.tsx"
+        "string.regexp.tsx",
+        "string.regexp.jsx"
       ],
       "settings": {
         "foreground": "#b37feb"
@@ -1461,7 +1538,8 @@
     {
       "name": "tsx::spunctuation",
       "scope": [
-        "keyword.control.type.tsx"
+        "keyword.control.type.tsx",
+        "keyword.control.type.jsx"
       ],
       "settings": {
         "foreground": "#006d75"
@@ -1967,91 +2045,6 @@
       ],
       "settings": {
         "foreground": "#13c2c2"
-      }
-    },
-    {
-      "name": "lua::regexp",
-      "scope": [
-        "string.regexp.lua"
-      ],
-      "settings": {
-        "foreground": "#b37feb"
-      }
-    },
-    {
-      "name": "vue::bind",
-      "scope": [
-        "punctuation.attribute-shorthand.bind.html.vue",
-        "keyword.control.conditional.vue"
-      ],
-      "settings": {
-        "foreground": "#ffd6e7",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "vue::slot",
-      "scope": [
-        "punctuation.attribute-shorthand.slot.html.vue",
-        "entity.other.attribute-name.html.vue"
-      ],
-      "settings": {
-        "foreground": "#fffb8f"
-      }
-    },
-    {
-      "name": "vue::scriptTag",
-      "scope": [
-        "entity.name.tag.template.html.vue",
-        "entity.name.tag.script.html.vue",
-        "entity.name.tag.style.html.vue"
-      ],
-      "settings": {
-        "foreground": "#95de64",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "vue::shortEvent",
-      "scope": [
-        "punctuation.attribute-shorthand.event.html.vue"
-      ],
-      "settings": {
-        "foreground": "#95de64",
-        "fontStyle": "bold"
-      }
-    }
-  ]
-}lua::string",
-      "scope": [
-        "string.quoted.single.lua",
-        "string.quoted.other.multiline.lua",
-        "string.quoted.double.lua"
-      ],
-      "settings": {
-        "foreground": "#b7eb8f",
-        "fonluatyle": "italic"
-      }
-    },
-    {
-      "name": "lua::loop",
-      "scope": [
-        "keyword.control.loop.lua",
-        "keyword.operator.expression.of.lua"
-      ],
-      "settings": {
-        "foreground": "#b37feb",
-        "fonluatyle": "italic bold"
-      }
-    },
-    {
-      "name": "luaEscape",
-      "scope": [
-        "constant.character.escape.lua"
-      ],
-      "settings": {
-        "foreground": "#13c2c2",
-        "fonluatyle": "bold italic"
       }
     },
     {

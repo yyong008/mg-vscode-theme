@@ -8,7 +8,7 @@ const tsxTypePrimitive = {
     'entity.name.type.alias.tsx'
   ],
   settings: {
-    foreground: colors.blueColors300,
+    foreground: colors.cyanColors600,
     fontStyle: 'bold'
   }
 }
@@ -26,8 +26,8 @@ const tsxTypeType = {
   name: 'tsx::type.key',
   scope: ['storage.type.type.tsx'],
   settings: {
-    foreground: colors.blueColors500,
-    fontStyle: 'bold'
+    foreground: colors.cyanColors600,
+    fontStyle: 'bold italic'
   }
 }
 

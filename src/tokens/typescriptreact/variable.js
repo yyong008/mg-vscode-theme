@@ -4,8 +4,7 @@ const tsxVariable = {
   name: 'tsx::variable',
   scope: ['variable.other.constant.tsx', 'variable.other.constant.jsx'],
   settings: {
-    foreground: colors.greenColors500,
-    fontStyle: 'bold'
+    foreground: colors.cyanColors600
   }
 }
 

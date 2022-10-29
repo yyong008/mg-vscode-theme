@@ -4,7 +4,7 @@ const tsObject = {
   name: 'ts::object::props',
   scope: ['meta.object-literal.key.ts'],
   settings: {
-    foreground: colors.orangeColors300
+    foreground: colors.grayColors100
   }
 }
 

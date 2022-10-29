@@ -4,7 +4,7 @@ const tsxObject = {
   name: 'tsx::object::props',
   scope: ['meta.object-literal.key.tsx', 'meta.object-literal.key.jsx'],
   settings: {
-    foreground: colors.orangeColors300
+    foreground: colors.grayColors200
   }
 }
 

@@ -4,8 +4,7 @@ const tsVariable = {
   name: 'ts::variable',
   scope: ['variable.other.constant.ts'],
   settings: {
-    foreground: colors.greenColors500,
-    fontStyle: 'bold'
+    foreground: colors.cyanColors600
   }
 }
 
