@@ -4,10 +4,10 @@ import colors from '../designs/index.js'
  * @type {import('../types/QuickInput').QuickInputList}
  */
 const quickInputList = {
-  ['quickInputList.focusBackground']: '#414339',
-  ['quickInputList.focusForeground']: '#414339',
-  ['quickInputList.focusIconForeground']: '#414339',
-  ['quickInputList.background']: '#414339'
+  ['quickInputList.focusBackground']: colors.cyanColors900,
+  ['quickInputList.focusForeground']: colors.grayColors100,
+  ['quickInputList.focusIconForeground']: colors.cyanColors400,
+  ['quickInputList.background']: colors.grayColors1100
 }
 
 export default { ...quickInputList }

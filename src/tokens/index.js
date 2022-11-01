@@ -1,3 +1,5 @@
+// import { setRuntimeColors } from '../designs/index.js'
+
 import javaScriptLanuage from './javascript/index.js'
 import typeScriptLanuage from './typescript/index.js'
 import typescriptReactLanguage from './typescriptreact/index.js'
@@ -10,16 +12,17 @@ import luaLanuage from './lua/index.js'
 import vueLanuage from './vue/index.js'
 
 export default function createColorTokens() {
+  // console.log([...htmlLanguage()].map((f) => f()))
   return [
-    ...javaScriptLanuage(),
-    ...typeScriptLanuage(),
-    ...typescriptReactLanguage(),
-    ...jsonLanguage(),
-    ...cssLanguage(),
-    ...htmlLanguage(),
-    ...markdownLanguage(),
-    ...yamlLanuage(),
-    ...luaLanuage(),
-    ...vueLanuage()
-  ]
+    // ...javaScriptLanuage(),
+    // ...typeScriptLanuage(),
+    // ...typescriptReactLanguage(),
+    // ...jsonLanguage(),
+    // ...cssLanguage(),
+    ...htmlLanguage()
+    // ...markdownLanguage(),
+    // ...yamlLanuage(),
+    // ...luaLanuage(),
+    // ...vueLanuage()
+  ].map((f) => f())
 }

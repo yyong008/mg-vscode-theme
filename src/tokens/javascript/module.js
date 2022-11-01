@@ -1,4 +1,4 @@
-import colors from '../../designs/index.js'
+import colors, { getRuntimeColors } from '../../designs/index.js'
 
 const jsImportFromExportDefault = {
   name: 'js::keywords::import/from/export/default',

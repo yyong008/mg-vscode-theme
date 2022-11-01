@@ -13,24 +13,64 @@
   "contributes": {
     "themes": [
       {
-        "label": "iNature Dark",
+        "label": "iNature Dark Blue",
         "uiTheme": "vs-dark",
-        "path": "./themes/iNatureDark.json"
+        "path": "./themes/iNatureDarkBlue.json"
       },
       {
-        "label": "iNature Light",
-        "uiTheme": "vs",
-        "path": "./themes/iNatureLight.json"
+        "label": "iNature Dark Cyan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkCyan.json"
       },
       {
-        "label": "iNature HC",
-        "uiTheme": "hc-light",
-        "path": "./themes/iNatureLightConstrast.json"
+        "label": "iNature Dark GeekBlue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkGeekBlue.json"
+      },
+       {
+        "label": "iNature Dark Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkGold.json"
       },
       {
-        "label": "iNature HC black",
-        "uiTheme": "hc-black",
-        "path": "./themes/iNatureDarkConstrast.json"
+        "label": "iNature Dark Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkGreen.json"
+      },
+      {
+        "label": "iNature Dark Lime",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkLime.json"
+      },
+       {
+        "label": "iNature Dark Magenta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkMagenta.json"
+      },
+      {
+        "label": "iNature Dark Organe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkOrgane.json"
+      },
+      {
+        "label": "iNature Dark Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkPurple.json"
+      },
+       {
+        "label": "iNature Dark Red",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkRed.json"
+      },
+      {
+        "label": "iNature Dark Volcano",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkVolcano.json"
+      },
+      {
+        "label": "iNature Dark Yellow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iNatureDarkYellow.json"
       }
     ]
   },

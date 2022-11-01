@@ -4,7 +4,7 @@ import colors from '../designs/index.js'
  * @type {import('../types/StatusBar.d.ts').StatusBar}
  */
 const statusBarColors = {
-  [`statusBar.foreground`]: colors.black,
+  [`statusBar.foreground`]: colors.grayColors100,
   [`statusBar.background`]: colors.cyanColors900
 }
 
@@ -16,16 +16,16 @@ const statusBarItemColors = {
   [`statusBarItem.activeBackground`]: colors.greenColors400,
   [`statusBarItem.hoverBackground`]: colors.grayColors1000,
   [`statusBarItem.prominentForeground`]: colors.cyanColors500,
-  [`statusBarItem.prominentBackground`]: colors.white,
-  [`statusBarItem.prominentHoverBackground`]: colors.white,
-  [`statusBarItem.remoteBackground`]: colors.white,
-  [`statusBarItem.remoteForeground`]: colors.white,
-  [`statusBarItem.errorBackground`]: colors.white,
-  [`statusBarItem.errorForeground`]: colors.white,
-  [`statusBarItem.warningBackground`]: colors.white,
-  [`statusBarItem.warningForeground`]: colors.white,
-  [`statusBarItem.compactHoverBackground`]: colors.white,
-  [`statusBarItem.focusBorder`]: colors.white
+  [`statusBarItem.prominentBackground`]: colors.grayColors100,
+  [`statusBarItem.prominentHoverBackground`]: colors.grayColors100,
+  [`statusBarItem.remoteBackground`]: colors.cyanColors700,
+  [`statusBarItem.remoteForeground`]: colors.grayColors100,
+  [`statusBarItem.errorBackground`]: colors.grayColors100,
+  [`statusBarItem.errorForeground`]: colors.grayColors100,
+  [`statusBarItem.warningBackground`]: colors.grayColors100,
+  [`statusBarItem.warningForeground`]: colors.grayColors100,
+  [`statusBarItem.compactHoverBackground`]: colors.grayColors100,
+  [`statusBarItem.focusBorder`]: colors.grayColors100
 }
 
 export default {
