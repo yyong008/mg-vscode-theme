@@ -1,15 +1,23 @@
-import colors from '../../designs/index.js'
+import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
-const vendoredPropertyName = {
+const vendorScopes = {
+  css: ['support.type.vendored.property-name.css'],
+  less: ['support.type.vendored.property-name.less'],
+  scss: ['support.type.vendored.property-name.scss'],
+  stylus: ['support.type.vendored.property-name.stylus']
+}
+
+const vendoredPropertyName = () => ({
   name: 'style::vendored.property-name',
   scope: [
-    'support.type.vendored.property-name.css',
-    'support.type.vendored.property-name.less',
-    'support.type.vendored.property-name.scss'
+    ...vendorScopes.css,
+    ...vendorScopes.less,
+    ...vendorScopes.scss,
+    ...vendorScopes.stylus
   ],
   settings: {
-    foreground: colors.blueColors400
+    foreground: `${mapColors(`${getRuntimeColors()}400`)}`
   }
-}
+})
 
 export default [vendoredPropertyName]

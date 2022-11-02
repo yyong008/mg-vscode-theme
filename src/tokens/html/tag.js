@@ -13,7 +13,7 @@ const htmlTag = () => ({
   scope: [...tag.tagName],
   settings: {
     foreground: `${mapColors(`${getRuntimeColors()}700`)}`,
-    fontStyle: 'bold italic'
+    fontStyle: 'bold'
   }
 })
 
@@ -45,9 +45,8 @@ const spunctuation = () => ({
   name: 'html::punctuation',
   scope: [...tag.punctuation],
   settings: {
-    // foreground: `${mapColors(`${getRuntimeColors()}600`)}`,
-    foreground: `${mapColors('grayColors700')}`,
-    fontStyle: 'bold italic'
+    foreground: `${mapColors('grayColors800')}`,
+    fontStyle: 'bold'
   }
 })
 

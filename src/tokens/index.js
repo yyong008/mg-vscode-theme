@@ -18,7 +18,7 @@ export default function createColorTokens() {
     // ...typeScriptLanuage(),
     // ...typescriptReactLanguage(),
     // ...jsonLanguage(),
-    // ...cssLanguage(),
+    ...cssLanguage(),
     ...htmlLanguage()
     // ...markdownLanguage(),
     // ...yamlLanuage(),

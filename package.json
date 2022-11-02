@@ -27,7 +27,7 @@
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkGeekBlue.json"
       },
-       {
+      {
         "label": "iNature Dark Gold",
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkGold.json"
@@ -42,7 +42,7 @@
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkLime.json"
       },
-       {
+      {
         "label": "iNature Dark Magenta",
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkMagenta.json"
@@ -57,7 +57,7 @@
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkPurple.json"
       },
-       {
+      {
         "label": "iNature Dark Red",
         "uiTheme": "vs-dark",
         "path": "./themes/iNatureDarkRed.json"
@@ -76,7 +76,8 @@
   },
   "dependencies": {
     "fs-extra": "^10.1.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.js,.tsx,.jsx .",

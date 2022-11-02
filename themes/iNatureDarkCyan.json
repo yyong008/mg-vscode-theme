@@ -154,13 +154,301 @@
   },
   "tokenColors": [
     {
+      "name": "style::class",
+      "scope": [
+        "entity.name.tag.css",
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.class.css",
+        "entity.name.tag.less",
+        "entity.other.attribute-name.id.less",
+        "entity.other.attribute-name.class.less",
+        "entity.name.tag.scss",
+        "entity.other.attribute-name.id.scss",
+        "entity.other.attribute-name.class.scss",
+        "entity.name.tag.styl",
+        "entity.other.attribute-name.id.styl",
+        "entity.other.attribute-name.class.styl"
+      ],
+      "settings": {
+        "foreground": "#5cdbd3",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "style::props",
+      "scope": [
+        "support.type.property-name.css",
+        "support.type.property-name.less",
+        "support.type.property-name.scss",
+        "support.type.property-name.styl"
+      ],
+      "settings": {
+        "foreground": "#e6fffb",
+        "fontStyle": "normal"
+      }
+    },
+    {
+      "name": "style::props",
+      "scope": [
+        "meta.property-value.css",
+        "support.constant.property-value.css",
+        "meta.property-value.less",
+        "support.constant.property-value.less",
+        "meta.property-value.scss",
+        "support.constant.property-value.scss",
+        "meta.property-value.styl",
+        "support.constant.property-value.styl"
+      ],
+      "settings": {
+        "foreground": "#b5f5ec"
+      }
+    },
+    {
+      "name": "style::props",
+      "scope": [
+        "constant.numeric.css",
+        "constant.numeric.less",
+        "constant.numeric.scss",
+        "constant.numeric.styl"
+      ],
+      "settings": {
+        "foreground": "#87e8de"
+      }
+    },
+    {
+      "name": "style::props",
+      "scope": [
+        "support.function.misc.css",
+        "variable.argument.css",
+        "support.function.misc.less",
+        "variable.argument.less",
+        "support.function.misc.scss",
+        "variable.argument.scss",
+        "support.function.misc.styl",
+        "variable.argument.styl"
+      ],
+      "settings": {
+        "foreground": "#36cfc9"
+      }
+    },
+    {
+      "name": "pseudo::class",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-class.less",
+        "entity.other.attribute-name.pseudo-class.scss",
+        "entity.other.attribute-name.pseudo-class.styl",
+        "entity.other.attribute-name.parent-selector.css",
+        "entity.other.attribute-name.parent-selector.less",
+        "entity.other.attribute-name.parent-selector.scss",
+        "entity.other.attribute-name.parent-selector.styl"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "pseudo::element",
+      "scope": [
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.other.attribute-name.pseudo-element.less",
+        "entity.other.attribute-name.pseudo-element.scss",
+        "entity.other.attribute-name.pseudo-element.styl"
+      ],
+      "settings": {
+        "foreground": "#36cfc9"
+      }
+    },
+    {
+      "name": "pseudo::element",
+      "scope": [
+        "keyword.operator.pattern.css",
+        "keyword.operator.pattern.less",
+        "keyword.operator.pattern.scss",
+        "keyword.operator.pattern.styl"
+      ],
+      "settings": {
+        "foreground": "#36cfc9"
+      }
+    },
+    {
+      "name": "style::props",
+      "scope": [
+        "punctuation.definition.entity.css",
+        "punctuation.definition.entity.less",
+        "punctuation.definition.entity.scss",
+        "punctuation.definition.entity.styl"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "style::operator",
+      "scope": [
+        "keyword.operator.logical.css",
+        "keyword.operator.logical.less",
+        "keyword.operator.logical.scss",
+        "keyword.operator.logical.styl",
+        "keyword.operator.css",
+        "keyword.operator.less",
+        "keyword.operator.scss",
+        "keyword.operator.styl",
+        "keyword.other.important.css",
+        "keyword.other.important.less",
+        "keyword.other.important.scss",
+        "keyword.other.important.styl",
+        "keyword.operator.combinator.css",
+        "keyword.operator.combinator.less",
+        "keyword.operator.combinator.scss",
+        "keyword.operator.combinator.styl"
+      ],
+      "settings": {
+        "foreground": "#5cdbd3"
+      }
+    },
+    {
+      "name": "style::comment",
+      "scope": [
+        "comment.block.css",
+        "comment.block.less",
+        "comment.line.double-slash.less",
+        "comment.block.scss",
+        "comment.line.double-slash.scss",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "style::class",
+      "scope": [
+        "keyword.control.at-rule.css",
+        "keyword.control.at-rule.namespace.css",
+        "keyword.control.at-rule.import.css",
+        "keyword.control.at-rule.keyframes.css",
+        "keyword.control.at-rule.media.css",
+        "keyword.control.at-rule.page.css",
+        "keyword.control.at-rule.supports.css",
+        "keyword.control.at-rule.font-face.css",
+        "keyword.control.at-rule.font-feature-values.css",
+        "keyword.control.at-rule.layer.tailwind",
+        "keyword.control.at-rule.counter-style.css",
+        "meta.at-rule.header.css",
+        "keyword.control.at-rule.less",
+        "keyword.control.at-rule.namespace.less",
+        "keyword.control.at-rule.import.less",
+        "keyword.control.at-rule.keyframes.less",
+        "keyword.control.at-rule.media.less",
+        "keyword.control.at-rule.page.less",
+        "keyword.control.at-rule.supports.less",
+        "keyword.control.at-rule.font-face.less",
+        "keyword.control.at-rule.font-feature-values.less",
+        "keyword.control.at-rule.counter-style.less",
+        "meta.at-rule.header.less",
+        "keyword.control.at-rule.scss",
+        "keyword.control.at-rule.namespace.scss",
+        "keyword.control.at-rule.import.scss",
+        "keyword.control.at-rule.keyframes.scss",
+        "keyword.control.at-rule.media.scss",
+        "keyword.control.at-rule.page.scss",
+        "keyword.control.at-rule.supports.scss",
+        "keyword.control.at-rule.font-face.scss",
+        "keyword.control.at-rule.font-feature-values.scss",
+        "\tkeyword.control.at-rule.counter-style.scss",
+        "meta.at-rule.header.scss",
+        "keyword.control.at-rule.styl",
+        "keyword.control.at-rule.namespace.styl",
+        "keyword.control.at-rule.import.styl",
+        "keyword.control.at-rule.keyframes.styl",
+        "keyword.control.at-rule.media.styl",
+        "keyword.control.at-rule.page.styl",
+        "keyword.control.at-rule.supports.styl",
+        "keyword.control.at-rule.font-face.styl",
+        "keyword.control.at-rule.font-feature-values.styl",
+        "keyword.control.at-rule.counter-style.styl",
+        "meta.at-rule.header.styl"
+      ],
+      "settings": {
+        "foreground": "#08979c",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "style::class",
+      "scope": [
+        "variable.parameter.keyframe-list.css",
+        "variable.parameter.keyframe-list.less",
+        "variable.parameter.keyframe-list.scss"
+      ],
+      "settings": {
+        "foreground": "#36cfc9"
+      }
+    },
+    {
+      "name": "style::class",
+      "scope": [
+        "entity.other.keyframe-offset.percentage.css",
+        "entity.other.keyframe-offset.percentage.less",
+        "entity.other.keyframe-offset.percentage.scss"
+      ],
+      "settings": {
+        "foreground": "#006d75"
+      }
+    },
+    {
+      "name": "style::vendored.property-name",
+      "scope": [
+        "support.type.vendored.property-name.css",
+        "support.type.vendored.property-name.less",
+        "support.type.vendored.property-name.scss",
+        "support.type.vendored.property-name.stylus"
+      ],
+      "settings": {
+        "foreground": "#5cdbd3"
+      }
+    },
+    {
+      "name": "style::vendored.property-name",
+      "scope": [
+        "string.quoted.single.css",
+        "string.quoted.double.css",
+        "string.quoted.single.less",
+        "string.quoted.double.less",
+        "string.quoted.single.scss",
+        "string.quoted.double.scss",
+        "string.quoted.single.styl",
+        "string.quoted.double.styl"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "style::vendored.property-name",
+      "scope": [
+        "variable.css",
+        "variable.argument.css",
+        "variable.less",
+        "variable.argument.less",
+        "variable.scss",
+        "variable.argument.scss",
+        "variable.styl",
+        "variable.argument.styl"
+      ],
+      "settings": {
+        "foreground": "#36cfc9"
+      }
+    },
+    {
       "name": "html::tag",
       "scope": [
         "entity.name.tag.html"
       ],
       "settings": {
         "foreground": "#08979c",
-        "fontStyle": "bold italic"
+        "fontStyle": "bold"
       }
     },
     {
@@ -198,8 +486,8 @@
         "punctuation.definition.tag.end.html"
       ],
       "settings": {
-        "foreground": "#8c8c8c",
-        "fontStyle": "bold italic"
+        "foreground": "#595959",
+        "fontStyle": "bold"
       }
     },
     {
