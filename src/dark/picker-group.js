@@ -3,8 +3,8 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/PickerGroup').PickerGroup}
  */
-const pickerGroup = {
+const pickerGroup = () => ({
   ['pickerGroup.foreground']: '#75715E'
-}
+})
 
-export default pickerGroup
+export default { pickerGroup }

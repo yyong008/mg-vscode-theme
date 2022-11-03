@@ -1,9 +1,9 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Settings').default}
  */
-const settingEditor = {
+const settingEditor = () => ({
   ['setting.headerForeground']: colors.grayColors100,
   ['setting.modifiedItemIndicator']: '',
   ['setting.dropdownBackground']: '',
@@ -24,8 +24,8 @@ const settingEditor = {
   ['setting.focusedRowBorder']: '',
   ['setting.headerBorder']: '',
   ['setting.sashBorder']: ''
-}
+})
 
 export default {
-  ...settingEditor
+  settingEditor
 }

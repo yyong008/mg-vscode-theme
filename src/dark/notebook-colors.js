@@ -3,7 +3,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/Notebook').Notebook}
  */
-const notebook = {
+const notebook = () => ({
   ['notebook.editorBackground']: '',
   ['notebook.cellBorderColor']: '',
   ['notebook.cellHoverBackground']: '',
@@ -21,42 +21,42 @@ const notebook = {
   ['notebook.selectedCellBackground']: '',
   ['notebook.selectedCellBorder']: '',
   ['notebook.symbolHighlightBackground']: ''
-}
+})
 
 /**
  * @type {import('../types/Notebook').NotebookScrollbarSlider}
  */
-const notebookScrollbarSlider = {
+const notebookScrollbarSlider = () => ({
   ['notebookScrollbarSlider.activeBackground']: '',
   ['notebookScrollbarSlider.background']: '',
   ['notebookScrollbarSlider.hoverBackground']: ''
-}
+})
 
 /**
  * @type {import('../types/Notebook').NotebookStatusErrorIcon}
  */
-const notebookStatusErrorIcon = {
+const notebookStatusErrorIcon = () => ({
   ['notebookStatusErrorIcon.foreground']: ''
-}
+})
 
 /**
  * @type {import('../types/Notebook').NotebookStatusRunningIcon}
  */
-const notebookStatusRunningIcon = {
+const notebookStatusRunningIcon = () => ({
   ['notebookStatusRunningIcon.foreground']: ''
-}
+})
 
 /**
  * @type {import('../types/Notebook').NotebookStatusSuccessIcon}
  */
-const notebookStatusSuccessIcon = {
+const notebookStatusSuccessIcon = () => ({
   ['notebookStatusSuccessIcon.foreground']: ''
-}
+})
 
 export default {
-  ...notebook,
-  ...notebookScrollbarSlider,
-  ...notebookStatusErrorIcon,
-  ...notebookStatusRunningIcon,
-  ...notebookStatusSuccessIcon
+  notebook,
+  notebookScrollbarSlider,
+  notebookStatusErrorIcon,
+  notebookStatusRunningIcon,
+  notebookStatusSuccessIcon
 }

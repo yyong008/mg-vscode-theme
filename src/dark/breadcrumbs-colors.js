@@ -1,23 +1,23 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import("../types/Breadcrumb").default}
  */
-const breadbrumbs = {
-  foreground: colors.cyanColors700,
+const breadbrumbs = () => ({
+  foreground: `${mapColors(`${getRuntimeColors()}400`)}`,
   background: colors.volcanoColors400,
-  focusForeground: colors.cyanColors400,
+  focusForeground: `${mapColors(`${getRuntimeColors()}400`)}`,
   activeSelectionForeground: ''
-}
+})
 
 /**
  * @type {import("../types/Breadcrumb").BreadcrumbPicker}
  */
-const breadcrumbPicker = {
-  background: colors.cyanColors900
-}
+const breadcrumbPicker = () => ({
+  background: `${mapColors(`${getRuntimeColors()}900`)}`
+})
 
 export default {
-  ...breadbrumbs,
-  ...breadcrumbPicker
+  breadbrumbs,
+  breadcrumbPicker
 }

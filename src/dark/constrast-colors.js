@@ -1,13 +1,13 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/ContrastColors').ContrastColors}
  */
-const ContrastColors = {
-  contrastActiveBorder: colors.cyanColors1000,
+const ContrastColors = () => ({
+  contrastActiveBorder: `${mapColors(`${getRuntimeColors()}1000`)}`,
   contrastBorder: ''
-}
+})
 
 export default {
-  ...ContrastColors
+  ContrastColors
 }

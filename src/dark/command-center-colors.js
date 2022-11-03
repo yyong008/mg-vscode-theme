@@ -1,16 +1,16 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/CommandCenter').default}
  */
-const commandCenterColors = {
-  foreground: colors.cyanColors100,
-  activeForeground: colors.cyanColors500,
+const commandCenterColors = () => ({
+  foreground: `${mapColors(`${getRuntimeColors()}100`)}`,
+  activeForeground: `${mapColors(`${getRuntimeColors()}500`)}`,
   background: '',
   activeBackground: '',
   border: ''
-}
+})
 
 export default {
-  ...commandCenterColors
+  commandCenterColors
 }

@@ -1,14 +1,14 @@
-import colors from '../designs/index.js'
+import { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import("../types/Toolbar")}
  */
-const actionColors = {
-  ['toolbar.hoverBackground']: colors.cyanColors800,
-  ['toolbar.hoverOutline']: colors.cyanColors800,
-  ['toolbar.activeBackground']: colors.redColors300
-}
+const actionColors = () => ({
+  ['toolbar.hoverBackground']: `${mapColors(`${getRuntimeColors()}800`)}`,
+  ['toolbar.hoverOutline']: `${mapColors(`${getRuntimeColors()}800`)}`,
+  ['toolbar.activeBackground']: `${mapColors(`${getRuntimeColors()}300`)}`
+})
 
 export default {
-  ...actionColors
+  actionColors
 }

@@ -1,14 +1,14 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Tree').default}
  */
-const tree = {
-  ['tree.indentGuidesStroke']: colors.cyanColors400,
+const tree = () => ({
+  ['tree.indentGuidesStroke']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['tree.tableColumnsBorder']: '',
   ['tree.tableOddRowsBackground']: ''
-}
+})
 
 export default {
-  ...tree
+  tree
 }

@@ -2,7 +2,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import("../types/Terminal")}
  */
-const terminalColors = {
+const terminalColors = () => ({
   ['terminal.ansiBlack']: '#333333',
   ['terminal.ansiRed']: '#C4265E',
   ['terminal.ansiGreen']: '#86B42B',
@@ -19,6 +19,6 @@ const terminalColors = {
   ['terminal.ansiBrightMagenta']: '#AE81FF',
   ['terminal.ansiBrightCyan']: '#66D9EF',
   ['terminal.ansiBrightWhite']: '#f8f8f2'
-}
+})
 
-export default terminalColors
+export default { terminalColors }

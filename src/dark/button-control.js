@@ -1,10 +1,10 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Button').default}
  */
-const button = {
-  ['button.background']: colors.cyanColors700,
+const button = () => ({
+  ['button.background']: `${mapColors(`${getRuntimeColors()}700`)}`,
   ['foreground']: '',
   ['border']: '',
   ['separator']: '',
@@ -12,8 +12,8 @@ const button = {
   ['secondaryForeground']: '',
   ['secondaryBackground']: '',
   ['secondaryHoverBackground']: ''
-}
+})
 
 export default {
-  ...button
+  button
 }

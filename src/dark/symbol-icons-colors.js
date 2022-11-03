@@ -3,7 +3,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/SymbolIcon').default}
  */
-const symbolIcon = {
+const symbolIcon = () => ({
   ['symbolIcon.arrayForeground']: '',
   ['symbolIcon.booleanForeground']: '',
   ['symbolIcon.classForeground']: '',
@@ -37,6 +37,6 @@ const symbolIcon = {
   ['symbolIcon.typeParameterForeground']: '',
   ['symbolIcon.unitForeground']: '',
   ['symbolIcon.variableForeground']: ''
-}
+})
 
-export default symbolIcon
+export default { symbolIcon }

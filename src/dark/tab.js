@@ -1,17 +1,17 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Tab').default}
  */
-const tab = {
+const tab = () => ({
   ['tab.activeBackground']: colors.grayColors1100,
   ['tab.unfocusedActiveBackground']: '',
   ['tab.inactiveBackground']: colors.grayColors900,
   ['tab.border']: colors.grayColors900,
   ['tab.inactiveForeground']: colors.grayColors600,
-  ['tab.activeForeground']: colors.cyanColors400,
-  ['tab.lastPinnedBorder']: colors.cyanColors400,
-  ['tab.activeBorder']: colors.cyanColors400,
+  ['tab.activeForeground']: `${mapColors(`${getRuntimeColors()}400`)}`,
+  ['tab.lastPinnedBorder']: `${mapColors(`${getRuntimeColors()}400`)}`,
+  ['tab.activeBorder']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['tab.unfocusedActiveBorder']: '',
   ['tab.activeBorderTop']: '',
   ['tab.unfocusedActiveBorderTop']: '',
@@ -22,12 +22,12 @@ const tab = {
   ['tab.unfocusedHoverBackground']: '',
   ['tab.hoverForeground']: '',
   ['tab.unfocusedHoverForeground']: '',
-  ['tab.hoverBorder']: colors.cyanColors400,
+  ['tab.hoverBorder']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['tab.unfocusedHoverBorder']: '',
   ['tab.activeModifiedBorder']: '',
   ['tab.inactiveModifiedBorder']: '',
   ['tab.unfocusedActiveModifiedBorder']: '',
   ['tab.unfocusedInactiveModifiedBorder']: ''
-}
+})
 
-export default tab
+export default { tab }

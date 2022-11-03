@@ -8,6 +8,7 @@ import styleAtRule from './at-rule.js'
 import styleVendor from './vendor.js'
 import styleString from './string.js'
 import styleVariable from './variable.js'
+import styleSource from './source.js'
 
 export default function styleLanguage() {
   return [
@@ -20,6 +21,7 @@ export default function styleLanguage() {
     ...styleAtRule,
     ...styleVendor,
     ...styleString,
-    ...styleVariable
+    ...styleVariable,
+    ...styleSource
   ]
 }

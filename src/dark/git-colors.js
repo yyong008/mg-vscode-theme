@@ -3,7 +3,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/Git').default}
  */
-const gitDecoration = {
+const gitDecoration = () => ({
   ['gitDecoration.addedResourceForeground']: colors.grayColors400,
   ['gitDecoration.modifiedResourceForeground']: colors.volcanoColors300,
   ['gitDecoration.deletedResourceForeground']: colors.grayColors900,
@@ -14,6 +14,6 @@ const gitDecoration = {
   ['gitDecoration.ignoredResourceForeground']: colors.greenColors8000,
   ['gitDecoration.conflictingResourceForeground']: colors.yellowColors600,
   ['gitDecoration.submoduleResourceForeground']: colors.cyanColors600
-}
+})
 
-export default { ...gitDecoration }
+export default { gitDecoration }

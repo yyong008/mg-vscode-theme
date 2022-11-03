@@ -1,26 +1,27 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/ActivityBar').ActivityBar;}
  */
-const activityBar = {
+const activityBar = () => ({
   ['activityBar.background']: colors.grayColors1000,
-  ['activityBar.foreground']: colors.cyanColors400
-}
+  ['activityBar.foreground']: `${mapColors(`${getRuntimeColors()}800`)}`
+})
 
 /**
  * @type {import('../types/ActivityBar').ActivityBarBadge}
  */
-const activityBarBadge = {
+const activityBarBadge = () => ({
   ['activityBarBadge.background']: colors.volcanoColors600,
-  ['activityBarBadge.foreground']: colors.cyanColors400
-}
+  ['activityBarBadge.foreground']: `${mapColors(`${getRuntimeColors()}400`)}`
+})
 
 /**
  * @type {import('../types/ActivityBar').ActivityBarItem;}
  */
-const activityBarItem = {
+const activityBarItem = () => ({
   ['activityBarItem.settingsProfilesHoverForeground']: '',
   ['activityBarItem.settingsProfilesBackground']: ''
-}
-export default { ...activityBar, ...activityBarBadge, ...activityBarItem }
+})
+
+export default { activityBar, activityBarBadge, activityBarItem }

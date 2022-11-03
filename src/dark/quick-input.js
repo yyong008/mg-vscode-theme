@@ -1,13 +1,17 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/QuickInput').QuickInputList}
  */
-const quickInputList = {
-  ['quickInputList.focusBackground']: colors.cyanColors900,
+const quickInputList = () => ({
+  ['quickInputList.focusBackground']: `${mapColors(
+    `${getRuntimeColors()}900`
+  )}`,
   ['quickInputList.focusForeground']: colors.grayColors100,
-  ['quickInputList.focusIconForeground']: colors.cyanColors400,
+  ['quickInputList.focusIconForeground']: `${mapColors(
+    `${getRuntimeColors()}400`
+  )}`,
   ['quickInputList.background']: colors.grayColors1100
-}
+})
 
-export default { ...quickInputList }
+export default { quickInputList }

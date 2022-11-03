@@ -1,51 +1,51 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Panel').Panel}
  */
-const panel = {
+const panel = () => ({
   ['panel.background']: colors.grayColors1000,
-  ['panel.border']: colors.cyanColors400,
+  ['panel.border']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['panel.dropBorder']: ''
-}
+})
 
 /**
  * @type {import('../types/Panel').PanelTitle}
  */
-const panelTitle = {
-  ['panelTitle.activeForeground']: colors.cyanColors400,
-  ['panelTitle.activeBorder']: colors.cyanColors400,
+const panelTitle = () => ({
+  ['panelTitle.activeForeground']: `${mapColors(`${getRuntimeColors()}400`)}`,
+  ['panelTitle.activeBorder']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['panelTitle.inactiveForeground']: '#75715E'
-}
+})
 
 /**
  * @type {import('../types/Panel').PanelInput}
  */
-const panelInput = {
+const panelInput = () => ({
   ['panelInput.border']: ''
-}
+})
 
 /**
  * @type {import('../types/Panel').PanelSection}
  */
-const panelSection = {
+const panelSection = () => ({
   ['panelSection.border']: '',
   ['panelSection.dropBackground']: ''
-}
+})
 
 /**
  * @type {import('../types/Panel').PanelSectionHeader}
  */
-const panelSectionHeader = {
+const panelSectionHeader = () => ({
   ['panelSectionHeader.background']: '',
   ['panelSectionHeader.foreground']: '',
   ['panelSectionHeader.border']: ''
-}
+})
 
 export default {
-  ...panel,
-  ...panelTitle,
-  ...panelInput,
-  ...panelSection,
-  ...panelSectionHeader
+  panel,
+  panelTitle,
+  panelInput,
+  panelSection,
+  panelSectionHeader
 }

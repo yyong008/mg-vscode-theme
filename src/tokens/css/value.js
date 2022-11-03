@@ -1,10 +1,26 @@
 import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const propsValueScope = {
-  css: ['meta.property-value.css', 'support.constant.property-value.css'],
-  less: ['meta.property-value.less', 'support.constant.property-value.less'],
-  scss: ['meta.property-value.scss', 'support.constant.property-value.scss'],
-  stylus: ['meta.property-value.styl', 'support.constant.property-value.styl']
+  css: [
+    'meta.property-value.css',
+    'support.constant.property-value.css',
+    'meta.embedded.block.css'
+  ],
+  less: [
+    'meta.property-value.less',
+    'support.constant.property-value.less',
+    'meta.embedded.block.less'
+  ],
+  scss: [
+    'meta.property-value.scss',
+    'support.constant.property-value.scss',
+    'meta.embedded.block.scss'
+  ],
+  stylus: [
+    'meta.property-value.styl',
+    'support.constant.property-value.styl',
+    'meta.embedded.block.styl'
+  ]
 }
 
 const numericScopes = {

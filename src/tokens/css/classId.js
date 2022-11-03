@@ -26,6 +26,7 @@ const tagClassIdScope = {
 const cssTagAndClassAndId = () => ({
   name: 'style::class',
   scope: [
+    'entity.other.attribute-name.id',
     ...tagClassIdScope.css,
     ...tagClassIdScope.less,
     ...tagClassIdScope.scss,

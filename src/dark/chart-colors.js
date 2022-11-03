@@ -3,7 +3,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/Charts').default}
  */
-const charts = {
+const charts = () => ({
   ['charts.foreground']: colors.redColors400,
   ['charts.lines']: '',
   ['charts.red']: '',
@@ -12,8 +12,8 @@ const charts = {
   ['charts.orange']: '',
   ['chargs.green']: '',
   ['charts.purple']: ''
-}
+})
 
 export default {
-  ...charts
+  charts
 }

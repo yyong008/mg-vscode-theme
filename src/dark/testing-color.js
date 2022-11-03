@@ -3,7 +3,7 @@ import colors from '../designs/index.js'
 /**
  * @type {import('../types/Testing').default}
  */
-const testing = {
+const testing = () => ({
   ['testing.iconFailed']: colors.redColors400,
   ['testing.iconErrored']: '',
   ['testing.iconPassed']: '',
@@ -17,6 +17,6 @@ const testing = {
   ['testing.message.error.lineBackground']: '',
   ['testing.message.info.decorationForeground']: '',
   ['testing.message.info.lineBackground']: ''
-}
+})
 
-export default testing
+export default { testing }

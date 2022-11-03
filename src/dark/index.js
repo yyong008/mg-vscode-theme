@@ -1,53 +1,67 @@
 import { removeNullStrAttr } from '../utils/index.js'
 
+const sprObjFromFn = async (path) => {
+  const exportObj = await (await import(`${path}`)).default
+
+  let returnObj = {}
+  for (let objFn in exportObj) {
+    // if (!Object.prototype.hasOwnProperty(exportObj, objFn)) return
+    returnObj = {
+      ...exportObj[objFn]()
+    }
+  }
+
+  return returnObj
+}
+
 export default async function createThemeColors() {
   const _colors = {
-    ...(await import('./action-colors.js')).default,
-    ...(await import('./activity-bar.js')).default,
-    ...(await import('./badge.js')).default,
-    ...(await import('./banner-colors.js')).default,
-    ...(await import('./breadcrumbs-colors.js')).default,
-    ...(await import('./base-colors.js')).default,
-    ...(await import('./button-control.js')).default,
-    ...(await import('./chart-colors.js')).default,
-    ...(await import('./command-center-colors.js')).default,
-    ...(await import('./constrast-colors.js')).default,
-    ...(await import('./debug.js')).default,
-    ...(await import('./diff-editor-colors.js')).default,
-    ...(await import('./dropdown-control.js')).default,
-    ...(await import('./editor.js')).default,
-    ...(await import('./extensions-colors.js')).default,
-    ...(await import('./git-colors.js')).default,
-    ...(await import('./input-control.js')).default,
-    ...(await import('./keybinding.js')).default,
-    ...(await import('./lists.js')).default,
-    ...(await import('./menu.js')).default,
-    ...(await import('./merge-conflicts-colors.js')).default,
-    ...(await import('./minimap.js')).default,
-    ...(await import('./notebook-colors.js')).default,
-    ...(await import('./notification-colors.js')).default,
-    ...(await import('./panel-colors.js')).default,
-    ...(await import('./peek-view-colors.js')).default,
-    ...(await import('./picker-group.js')).default,
-    ...(await import('./ports-colors.js')).default,
-    ...(await import('./progress-bar.js')).default,
-    ...(await import('./quick-input.js')).default,
-    ...(await import('./quick-picker-colors.js')).default,
-    ...(await import('./scrollbar-control.js')).default,
-    ...(await import('./selection.js')).default,
-    ...(await import('./settings.js')).default,
-    ...(await import('./side-bar.js')).default,
-    ...(await import('./snippets-colors.js')).default,
-    ...(await import('./source-control-color.js')).default,
-    ...(await import('./status-bar-colors.js')).default,
-    ...(await import('./symbol-icons-colors.js')).default,
-    ...(await import('./tab.js')).default,
-    ...(await import('./terminal.js')).default,
-    ...(await import('./testing-color.js')).default,
-    ...(await import('./tree.js')).default,
-    ...(await import('./welcome-page-colors.js')).default,
-    ...(await import('./widget.js')).default,
-    ...(await import('./window.js')).default
+    ...(await sprObjFromFn('./action-colors.js')),
+    ...(await sprObjFromFn('./activity-bar.js')),
+    ...(await sprObjFromFn('./badge.js')),
+    ...(await sprObjFromFn('./banner-colors.js')),
+    ...(await sprObjFromFn('./breadcrumbs-colors.js')),
+    ...(await sprObjFromFn('./base-colors.js')),
+    ...(await sprObjFromFn('./button-control.js')),
+    ...(await sprObjFromFn('./chart-colors.js')),
+    ...(await sprObjFromFn('./command-center-colors.js')),
+    ...(await sprObjFromFn('./constrast-colors.js')),
+    ...(await sprObjFromFn('./debug.js')),
+    ...(await sprObjFromFn('./diff-editor-colors.js')),
+    ...(await sprObjFromFn('./dropdown-control.js')),
+    ...(await sprObjFromFn('./editor.js')),
+    ...(await sprObjFromFn('./extensions-colors.js')),
+    ...(await sprObjFromFn('./git-colors.js')),
+    ...(await sprObjFromFn('./input-control.js')),
+    ...(await sprObjFromFn('./keybinding.js')),
+    ...(await sprObjFromFn('./lists.js')),
+    ...(await sprObjFromFn('./menu.js')),
+    ...(await sprObjFromFn('./merge-conflicts-colors.js')),
+    ...(await sprObjFromFn('./minimap.js')),
+    ...(await sprObjFromFn('./notebook-colors.js')),
+    ...(await sprObjFromFn('./notification-colors.js')),
+    ...(await sprObjFromFn('./panel-colors.js')),
+    ...(await sprObjFromFn('./peek-view-colors.js')),
+    ...(await sprObjFromFn('./picker-group.js')),
+    ...(await sprObjFromFn('./ports-colors.js')),
+    ...(await sprObjFromFn('./progress-bar.js')),
+    ...(await sprObjFromFn('./quick-input.js')),
+    ...(await sprObjFromFn('./quick-picker-colors.js')),
+    ...(await sprObjFromFn('./scrollbar-control.js')),
+    ...(await sprObjFromFn('./selection.js')),
+    ...(await sprObjFromFn('./settings.js')),
+    ...(await sprObjFromFn('./side-bar.js')),
+    ...(await sprObjFromFn('./snippets-colors.js')),
+    ...(await sprObjFromFn('./source-control-color.js')),
+    ...(await sprObjFromFn('./status-bar-colors.js')),
+    ...(await sprObjFromFn('./symbol-icons-colors.js')),
+    ...(await sprObjFromFn('./tab.js')),
+    ...(await sprObjFromFn('./terminal.js')),
+    ...(await sprObjFromFn('./testing-color.js')),
+    ...(await sprObjFromFn('./tree.js')),
+    ...(await sprObjFromFn('./welcome-page-colors.js')),
+    ...(await sprObjFromFn('./widget.js')),
+    ...(await sprObjFromFn('./window.js'))
   }
 
   return removeNullStrAttr(_colors)

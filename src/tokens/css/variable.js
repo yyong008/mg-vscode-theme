@@ -2,7 +2,7 @@ import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const variableScope = {
   css: ['variable.css', 'variable.argument.css'],
-  less: ['variable.less', 'variable.argument.less'],
+  less: ['variable.less', 'variable.argument.less', 'variable.other.less'],
   scss: ['variable.scss', 'variable.argument.scss'],
   stylus: ['variable.styl', 'variable.argument.styl']
 }
