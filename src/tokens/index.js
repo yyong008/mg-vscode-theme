@@ -13,7 +13,7 @@ import vueLanuage from './vue/index.js'
 
 export default function createColorTokens() {
   return [
-    // ...javaScriptLanuage(),
+    ...javaScriptLanuage(),
     // ...typeScriptLanuage(),
     // ...typescriptReactLanguage(),
     // ...jsonLanguage(),

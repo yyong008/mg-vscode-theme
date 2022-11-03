@@ -156,6 +156,519 @@
   },
   "tokenColors": [
     {
+      "name": "js::keywords::import/from/export/default",
+      "scope": [
+        "keyword.control.import.js",
+        "keyword.control.from.js",
+        "keyword.control.export.js",
+        "keyword.control.default.js",
+        "keyword.control.import.jsx",
+        "keyword.control.from.jsx",
+        "keyword.control.export.jsx",
+        "keyword.control.default.jsx",
+        "keyword.control.import.ts",
+        "keyword.control.from.ts",
+        "keyword.control.export.ts",
+        "keyword.control.default.ts",
+        "keyword.control.import.tsx",
+        "keyword.control.from.tsx",
+        "keyword.control.export.tsx",
+        "keyword.control.default.tsx"
+      ],
+      "settings": {
+        "foreground": "#bfbfbf"
+      }
+    },
+    {
+      "name": "js::variable::import-content",
+      "scope": [
+        "meta.import.js",
+        "meta.import.jsx",
+        "meta.import.ts",
+        "meta.import.tsx"
+      ],
+      "settings": {
+        "foreground": "#5cdbd3"
+      }
+    },
+    {
+      "name": "js::import-variables",
+      "scope": [],
+      "settings": {
+        "foreground": "#5cdbd3"
+      }
+    },
+    {
+      "name": "js::from::alias",
+      "scope": [
+        "variable.other.readwrite.alias.js",
+        "variable.other.object.js",
+        "variable.other.readwrite.alias.jsx",
+        "variable.other.object.jsx",
+        "variable.other.readwrite.alias.ts",
+        "variable.other.object.ts",
+        "variable.other.readwrite.alias.tsx",
+        "variable.other.object.tsx"
+      ],
+      "settings": {
+        "foreground": "#5cdbd3"
+      }
+    },
+    {
+      "name": "js::variable.other.readwrite.alias.js",
+      "scope": [
+        "keyword.operator.expression.import.js",
+        "keyword.operator.expression.import.jsx",
+        "keyword.operator.expression.import.ts",
+        "keyword.operator.expression.import.tsx"
+      ],
+      "settings": {
+        "foreground": "#f759ab"
+      }
+    },
+    {
+      "name": "js::const",
+      "scope": [
+        "storage.type.js",
+        "storage.type.ts",
+        "storage.type.jsx",
+        "storage.type.tsx"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "js::async-await",
+      "scope": [
+        "storage.modifier.async.js",
+        "keyword.control.flow.js",
+        "storage.modifier.async.jsx",
+        "keyword.control.flow.jsx",
+        "storage.modifier.async.ts",
+        "keyword.control.flow.ts",
+        "storage.modifier.async.tsx",
+        "keyword.control.flow.tsx"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "js::function",
+      "scope": [
+        "storage.type.function.js",
+        "storage.type.function.jsx",
+        "storage.type.function.ts",
+        "storage.type.function.js"
+      ],
+      "settings": {
+        "foreground": "#b37feb",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "js::params",
+      "scope": [
+        "variable.parameter.js",
+        "variable.parameter.jsx",
+        "variable.parameter.ts",
+        "variable.parameter.tsx"
+      ],
+      "settings": {
+        "foreground": "#f0f0f0"
+      }
+    },
+    {
+      "name": "js::arrow",
+      "scope": [
+        "storage.type.function.arrow.js",
+        "storage.type.function.arrow.ts",
+        "storage.type.function.arrow.jsx",
+        "storage.type.function.arrow.tsx"
+      ],
+      "settings": {
+        "foreground": "#08979c"
+      }
+    },
+    {
+      "name": "js::entity-function-call",
+      "scope": [
+        "entity.name.function.js",
+        "entity.name.function.jsx",
+        "entity.name.function.ts",
+        "entity.name.function.tsx",
+        "meta.function-call.js",
+        "meta.function-call.jsx",
+        "meta.function-call.ts",
+        "meta.function-call.tsx"
+      ],
+      "settings": {
+        "foreground": "#08979c"
+      }
+    },
+    {
+      "name": "js::comment",
+      "scope": [
+        "comment.line.double-slash.js",
+        "comment.line.double-slash.ts",
+        "comment.line.double-slash.jsx",
+        "comment.line.double-slash.tsx",
+        "comment.block.js",
+        "comment.block.documentation.js",
+        "comment.block.ts",
+        "comment.block.documentation.ts",
+        "comment.block.jsx",
+        "comment.block.documentation.jsx",
+        "comment.block.tsx",
+        "comment.block.documentation.tsx",
+        "punctuation.definition.comment",
+        "comment.line.shebang.js",
+        "comment.line.shebang.ts",
+        "comment.line.shebang.jsx",
+        "comment.line.shebang.tsx"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "js::template",
+      "scope": [
+        "string.template.js",
+        "string.template.jsx",
+        "string.template.ts",
+        "string.template.tsx"
+      ],
+      "settings": {
+        "foreground": "#fafafa"
+      }
+    },
+    {
+      "name": "js::variable",
+      "scope": [
+        "variable.other.constant.js",
+        "variable.other.constant.jsx",
+        "variable.other.constant.ts",
+        "variable.other.constant.tsx"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "js::global::variable",
+      "scope": [
+        "variable.other.constant.object.js",
+        "variable.other.constant.object.jsx",
+        "variable.other.constant.object.ts",
+        "variable.other.constant.object.tsx"
+      ],
+      "settings": {
+        "foreground": "#40a9ff"
+      }
+    },
+    {
+      "name": "js::new::variable",
+      "scope": [
+        "support.variable.property.target.js",
+        "support.variable.property.target.ts",
+        "support.variable.property.target.jsx",
+        "support.variable.property.target.tsx"
+      ],
+      "settings": {
+        "foreground": "#40a9ff"
+      }
+    },
+    {
+      "name": "js::operator",
+      "scope": [
+        "keyword.operator.assignment.js",
+        "keyword.operator.comparison.js",
+        "keyword.operator.logical.js",
+        "keyword.operator.arithmetic.js",
+        "keyword.operator.expression.typeof.js",
+        "keyword.operator.expression.instanceof.js",
+        "keyword.operator.increment.js",
+        "keyword.operator.decrement.js",
+        "keyword.operator.relational.js",
+        "keyword.operator.expression.delete.js",
+        "keyword.operator.new.js",
+        "keyword.operator.bitwise.js",
+        "keyword.operator.bitwise.shift.js",
+        "keyword.operator.spread.js",
+        "keyword.operator.ternary.js",
+        "keyword.operator.assignment.compound.js",
+        "keyword.operator.assignment.compound.bitwise.js",
+        "keyword.operator.expression.in.js",
+        "keyword.operator.expression.void.js",
+        "punctuation.accessor.optional.js",
+        "keyword.generator.asterisk.js",
+        "keyword.control.as.js",
+        "keyword.control.switch.js",
+        "keyword.operator.assignment.jsx",
+        "keyword.operator.comparison.jsx",
+        "keyword.operator.logical.jsx",
+        "keyword.operator.arithmetic.jsx",
+        "keyword.operator.expression.typeof.jsx",
+        "keyword.operator.expression.instanceof.jsx",
+        "keyword.operator.increment.jsx",
+        "keyword.operator.decrement.jsx",
+        "keyword.operator.relational.jsx",
+        "keyword.operator.expression.delete.jsx",
+        "keyword.operator.new.jsx",
+        "keyword.operator.bitwise.jsx",
+        "keyword.operator.bitwise.shift.jsx",
+        "keyword.operator.spread.jsx",
+        "keyword.operator.ternary.jsx",
+        "keyword.operator.assignment.compound.jsx",
+        "keyword.operator.assignment.compound.bitwise.jsx",
+        "keyword.operator.expression.in.jsx",
+        "keyword.operator.expression.void.jsx",
+        "punctuation.accessor.optional.jsx",
+        "keyword.generator.asterisk.jsx",
+        "keyword.control.as.jsx",
+        "keyword.control.switch.jsx",
+        "keyword.operator.assignment.ts",
+        "keyword.operator.comparison.ts",
+        "keyword.operator.logical.ts",
+        "keyword.operator.arithmetic.ts",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.expression.instanceof.ts",
+        "keyword.operator.increment.ts",
+        "keyword.operator.decrement.ts",
+        "keyword.operator.relational.ts",
+        "keyword.operator.expression.delete.ts",
+        "keyword.operator.new.ts",
+        "keyword.operator.bitwise.ts",
+        "keyword.operator.bitwise.shift.ts",
+        "keyword.operator.spread.ts",
+        "keyword.operator.ternary.ts",
+        "keyword.operator.assignment.compound.ts",
+        "keyword.operator.assignment.compound.bitwise.ts",
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.void.ts",
+        "punctuation.accessor.optional.ts",
+        "keyword.generator.asterisk.ts",
+        "keyword.control.as.ts",
+        "keyword.control.switch.ts",
+        "keyword.operator.assignment.tsx",
+        "keyword.operator.comparison.tsx",
+        "keyword.operator.logical.tsx",
+        "keyword.operator.arithmetic.tsx",
+        "keyword.operator.expression.typeof.tsx",
+        "keyword.operator.expression.instanceof.tsx",
+        "keyword.operator.increment.tsx",
+        "keyword.operator.decrement.tsx",
+        "keyword.operator.relational.tsx",
+        "keyword.operator.expression.delete.tsx",
+        "keyword.operator.new.tsx",
+        "keyword.operator.bitwise.tsx",
+        "keyword.operator.bitwise.shift.tsx",
+        "keyword.operator.spread.tsx",
+        "keyword.operator.ternary.tsx",
+        "keyword.operator.assignment.compound.tsx",
+        "keyword.operator.assignment.compound.bitwise.tsx",
+        "keyword.operator.expression.in.tsx",
+        "keyword.operator.expression.void.tsx",
+        "punctuation.accessor.optional.tsx",
+        "keyword.generator.asterisk.tsx",
+        "keyword.control.as.tsx",
+        "keyword.control.switch.tsx"
+      ],
+      "settings": {
+        "foreground": "#eb2f96",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "js::conditional",
+      "scope": [
+        "keyword.control.conditional.js",
+        "keyword.control.conditional.jsx",
+        "keyword.control.conditional.js",
+        "keyword.control.conditional.tsx"
+      ],
+      "settings": {
+        "foreground": "#eb2f96"
+      }
+    },
+    {
+      "name": "js::object::props",
+      "scope": [
+        "meta.object-literal.key.js",
+        "meta.object-literal.key.ts",
+        "meta.object-literal.key.jsx",
+        "meta.object-literal.key.tsx"
+      ],
+      "settings": {
+        "foreground": "#bfbfbf"
+      }
+    },
+    {
+      "name": "js::string",
+      "scope": [
+        "string.quoted.single.js",
+        "string.quoted.double.js",
+        "string.quoted.single.jsx",
+        "string.quoted.double.jsx",
+        "string.quoted.single.ts",
+        "string.quoted.double.ts",
+        "string.quoted.single.tsx",
+        "string.quoted.double.tsx"
+      ],
+      "settings": {
+        "foreground": "#bfbfbf"
+      }
+    },
+    {
+      "name": "js::loop",
+      "scope": [
+        "keyword.control.loop.js",
+        "keyword.control.loop.ts",
+        "keyword.control.loop.jsx",
+        "keyword.control.loop.tsx",
+        "keyword.operator.expression.of.js",
+        "keyword.operator.expression.of.jsx",
+        "keyword.operator.expression.of.ts",
+        "keyword.operator.expression.of.tsx"
+      ],
+      "settings": {
+        "foreground": "#b37feb"
+      }
+    },
+    {
+      "name": "js::label",
+      "scope": [
+        "entity.name.label.js",
+        "entity.name.label.ts",
+        "entity.name.label.jsx",
+        "entity.name.label.tsx"
+      ],
+      "settings": {
+        "foreground": "#b37feb"
+      }
+    },
+    {
+      "name": "js::escape",
+      "scope": [
+        "constant.character.escape.js",
+        "constant.character.escape.ts",
+        "constant.character.escape.jsx",
+        "constant.character.escape.tsx"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "js::class",
+      "scope": [
+        "storage.type.class.js",
+        "storage.type.class.jsx",
+        "storage.type.class.ts",
+        "storage.type.class.tsx"
+      ],
+      "settings": {
+        "foreground": "#b37feb"
+      }
+    },
+    {
+      "name": "js::class::entity",
+      "scope": [
+        "entity.name.type.class.js",
+        "entity.name.type.class.jsx",
+        "entity.name.type.class.ts",
+        "entity.name.type.class.tsx"
+      ],
+      "settings": {
+        "foreground": "#1890ff"
+      }
+    },
+    {
+      "name": "js::this",
+      "scope": [
+        "variable.language.this.js",
+        "variable.language.this.jsx",
+        "variable.language.this.ts",
+        "variable.language.this.ts"
+      ],
+      "settings": {
+        "foreground": "#fa541c"
+      }
+    },
+    {
+      "name": "js::class::props",
+      "scope": [
+        "variable.object.property.js",
+        "variable.object.property.jsx",
+        "variable.object.property.ts",
+        "variable.object.property.tsx"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#69c0ff"
+      }
+    },
+    {
+      "name": "js::class::static::name",
+      "scope": [
+        "storage.modifier.js",
+        "storage.modifier.jsx",
+        "storage.modifier.ts",
+        "storage.modifier.tsx"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#69c0ff"
+      }
+    },
+    {
+      "name": "js::class::static::props",
+      "scope": [
+        "variable.object.property.js",
+        "variable.object.property.jsx",
+        "variable.object.property.ts",
+        "variable.object.property.tsx"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#91d5ff"
+      }
+    },
+    {
+      "name": "js/ts::punctuation",
+      "scope": [
+        "punctuation.definition.comment.js",
+        "punctuation.definition.string.template.begin.js",
+        "punctuation.definition.string.template.end.js",
+        "punctuation.definition.comment.jsx",
+        "punctuation.definition.string.template.begin.jsx",
+        "punctuation.definition.string.template.end.jsx",
+        "punctuation.definition.comment.ts",
+        "punctuation.definition.string.template.begin.ts",
+        "punctuation.definition.string.template.end.ts",
+        "punctuation.definition.comment.tsx",
+        "punctuation.definition.string.template.begin.tsx",
+        "punctuation.definition.string.template.end.tsx"
+      ],
+      "settings": {
+        "foreground": "#f759ab"
+      }
+    },
+    {
+      "name": "js/ts::punctuation",
+      "scope": [
+        "punctuation.separator.comma.js",
+        "punctuation.separator.comma.jsx",
+        "punctuation.separator.comma.ts",
+        "punctuation.separator.comma.tsx"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
       "name": "style::class",
       "scope": [
         "entity.other.attribute-name.id",
