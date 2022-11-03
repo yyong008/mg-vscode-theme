@@ -1,4 +1,4 @@
-import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
+import colors from '../designs/index.js'
 
 /**
  * @type {import('../types/Settings').default}

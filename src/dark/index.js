@@ -5,9 +5,11 @@ const sprObjFromFn = async (path) => {
 
   let returnObj = {}
   for (let objFn in exportObj) {
-    // if (!Object.prototype.hasOwnProperty(exportObj, objFn)) return
-    returnObj = {
-      ...exportObj[objFn]()
+    if (typeof exportObj[objFn] === 'function') {
+      returnObj = {
+        ...returnObj,
+        ...exportObj[objFn]()
+      }
     }
   }
 

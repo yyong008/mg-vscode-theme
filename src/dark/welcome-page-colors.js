@@ -1,4 +1,4 @@
-import colors from '../designs/index.js'
+// import colors from '../designs/index.js'
 
 /**
  * @type {import('../types/WelcomePage').default}

@@ -12,7 +12,6 @@ import luaLanuage from './lua/index.js'
 import vueLanuage from './vue/index.js'
 
 export default function createColorTokens() {
-  // console.log([...htmlLanguage()].map((f) => f()))
   return [
     // ...javaScriptLanuage(),
     // ...typeScriptLanuage(),

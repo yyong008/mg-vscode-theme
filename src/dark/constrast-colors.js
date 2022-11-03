@@ -1,4 +1,4 @@
-import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
+import { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/ContrastColors').ContrastColors}

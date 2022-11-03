@@ -1,11 +1,12 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Scrollbar').Scrollbar}
  */
 const sideBar = () => ({
-  ['sideBar.background']: colors.grayColors1100,
-  ['sideBarSectionHeader.background']: '#272822'
+  ['sideBar.background']: colors.grayColors1000,
+  ['sideBar.foreground']: colors.grayColors100,
+  ['sideBar.border']: `${mapColors(`${getRuntimeColors()}900`)}`
 })
 
 /**
