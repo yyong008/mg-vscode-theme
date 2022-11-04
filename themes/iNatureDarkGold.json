@@ -686,7 +686,7 @@
         "entity.name.type.enum.tsx"
       ],
       "settings": {
-        "foreground": "#b7eb8f"
+        "foreground": "#ffe58f"
       }
     },
     {
@@ -696,7 +696,7 @@
         "variable.other.enummember.tsx"
       ],
       "settings": {
-        "foreground": "#69c0ff"
+        "foreground": "#ffd666"
       }
     },
     {
@@ -716,7 +716,7 @@
         "meta.interface.tsx"
       ],
       "settings": {
-        "foreground": "#69c0ff"
+        "foreground": "#ffd666"
       }
     },
     {
@@ -726,7 +726,7 @@
         "entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#87e8de"
+        "foreground": "#ffe58f"
       }
     },
     {
@@ -736,7 +736,7 @@
         "entity.other.attribute-name.tsx"
       ],
       "settings": {
-        "foreground": "#08979c"
+        "foreground": "#d48806"
       }
     },
     {
@@ -750,7 +750,7 @@
         "punctuation.separator.key-value.tsx"
       ],
       "settings": {
-        "foreground": "#006d75"
+        "foreground": "#ad6800"
       }
     },
     {
@@ -760,7 +760,7 @@
         "keyword.control.type.jsx"
       ],
       "settings": {
-        "foreground": "#006d75"
+        "foreground": "#ad6800"
       }
     },
     {
@@ -774,7 +774,7 @@
         "entity.name.type.alias.tsx"
       ],
       "settings": {
-        "foreground": "#13c2c2",
+        "foreground": "#faad14",
         "fontStyle": "bold"
       }
     },
@@ -785,7 +785,7 @@
         "support.type.builtin.tsx"
       ],
       "settings": {
-        "foreground": "#95de64",
+        "foreground": "#ffd666",
         "fontStyle": "bold"
       }
     },
@@ -796,7 +796,7 @@
         "storage.type.type.tsx"
       ],
       "settings": {
-        "foreground": "#13c2c2",
+        "foreground": "#d48806",
         "fontStyle": "bold italic"
       }
     },
@@ -1612,6 +1612,43 @@
       "settings": {
         "foreground": "#95de64",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "docker::comment",
+      "scope": [
+        "comment.line.number-sign.dockerfile"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "docker::key",
+      "scope": [
+        "keyword.other.special-method.dockerfile"
+      ],
+      "setting": {
+        "foreground": "#ffe58f"
+      }
+    },
+    {
+      "name": "docker::key",
+      "scope": [
+        "\tsource.dockerfile"
+      ],
+      "setting": {
+        "foreground": "#faad14"
+      }
+    },
+    {
+      "name": "js::string",
+      "scope": [
+        "string.quoted.single.dockerfile",
+        "string.quoted.double.dockerfile"
+      ],
+      "settings": {
+        "foreground": "#bfbfbf"
       }
     }
   ]

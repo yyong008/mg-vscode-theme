@@ -686,7 +686,7 @@
         "entity.name.type.enum.tsx"
       ],
       "settings": {
-        "foreground": "#b7eb8f"
+        "foreground": "#87e8de"
       }
     },
     {
@@ -696,7 +696,7 @@
         "variable.other.enummember.tsx"
       ],
       "settings": {
-        "foreground": "#69c0ff"
+        "foreground": "#5cdbd3"
       }
     },
     {
@@ -716,7 +716,7 @@
         "meta.interface.tsx"
       ],
       "settings": {
-        "foreground": "#69c0ff"
+        "foreground": "#5cdbd3"
       }
     },
     {
@@ -785,7 +785,7 @@
         "support.type.builtin.tsx"
       ],
       "settings": {
-        "foreground": "#95de64",
+        "foreground": "#5cdbd3",
         "fontStyle": "bold"
       }
     },
@@ -796,7 +796,7 @@
         "storage.type.type.tsx"
       ],
       "settings": {
-        "foreground": "#13c2c2",
+        "foreground": "#08979c",
         "fontStyle": "bold italic"
       }
     },
@@ -1612,6 +1612,43 @@
       "settings": {
         "foreground": "#95de64",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "docker::comment",
+      "scope": [
+        "comment.line.number-sign.dockerfile"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "docker::key",
+      "scope": [
+        "keyword.other.special-method.dockerfile"
+      ],
+      "setting": {
+        "foreground": "#87e8de"
+      }
+    },
+    {
+      "name": "docker::key",
+      "scope": [
+        "\tsource.dockerfile"
+      ],
+      "setting": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "js::string",
+      "scope": [
+        "string.quoted.single.dockerfile",
+        "string.quoted.double.dockerfile"
+      ],
+      "settings": {
+        "foreground": "#bfbfbf"
       }
     }
   ]
