@@ -1,6 +1,6 @@
 import colors from '../../designs/index.js'
 
-const luaComment = {
+const luaComment = () => ({
   name: 'lua::comment',
   scope: [
     'punctuation.definition.comment.lua',
@@ -10,6 +10,6 @@ const luaComment = {
   settings: {
     foreground: colors.grayColors800
   }
-}
+})
 
 export default [luaComment]

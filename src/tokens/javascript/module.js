@@ -1,4 +1,4 @@
-import colors, { getRuntimeColors } from '../../designs/index.js'
+import colors from '../../designs/index.js'
 
 const importExportFromDefault = {
   js: [

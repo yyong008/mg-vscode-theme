@@ -1,6 +1,6 @@
 import colors from '../../designs/index.js'
 
-const vueSyntaxBind = {
+const vueSyntaxBind = () => ({
   name: 'vue::bind',
   scope: [
     'punctuation.attribute-shorthand.bind.html.vue',
@@ -10,9 +10,9 @@ const vueSyntaxBind = {
     foreground: colors.magentaColors200,
     fontStyle: 'bold'
   }
-}
+})
 
-const vueSyntaxSlot = {
+const vueSyntaxSlot = () => ({
   name: 'vue::slot',
   scope: [
     'punctuation.attribute-shorthand.slot.html.vue',
@@ -21,9 +21,9 @@ const vueSyntaxSlot = {
   settings: {
     foreground: colors.yellowColors300
   }
-}
+})
 
-const vueSyntaxScript = {
+const vueSyntaxScript = () => ({
   name: 'vue::scriptTag',
   scope: [
     'entity.name.tag.template.html.vue',
@@ -34,16 +34,16 @@ const vueSyntaxScript = {
     foreground: colors.greenColors400,
     fontStyle: 'bold'
   }
-}
+})
 
-const vueSyntaxShortEvent = {
+const vueSyntaxShortEvent = () => ({
   name: 'vue::shortEvent',
   scope: ['punctuation.attribute-shorthand.event.html.vue'],
   settings: {
     foreground: colors.greenColors400,
     fontStyle: 'bold'
   }
-}
+})
 
 export default [
   vueSyntaxBind,

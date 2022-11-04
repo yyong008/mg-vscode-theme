@@ -1,10 +1,10 @@
-import colors from '../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 
 /**
  * @type {import('../types/Badge');}
  */
 const badge = () => ({
-  ['badge.background']: colors.volcanoColors600,
+  ['badge.background']: `${mapColors(`${getRuntimeColors()}400`)}`,
   ['badge.foreground']: colors.grayColors100
 })
 

@@ -1,22 +1,22 @@
-import colors from '../../designs/index.js'
+import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
-const tagYaml = {
+const tagYaml = () => ({
   name: 'yaml::tagProps',
   scope: ['entity.name.tag.yaml'],
   settings: {
-    foreground: colors.magentaColors400
+    foreground: `${mapColors(`${getRuntimeColors()}400`)}`
   }
-}
+})
 
-const yamlPlain = {
+const yamlPlain = () => ({
   name: 'yaml::tagProps',
   scope: ['string.unquoted.plain.out.yaml'],
   settings: {
-    foreground: colors.goldColors500
+    foreground: `${mapColors(`${getRuntimeColors()}500`)}`
   }
-}
+})
 
-const yamlInMd = {
+const yamlInMd = () => ({
   name: 'yaml::md',
   scope: [
     'punctuation.definition.markdown',
@@ -29,9 +29,9 @@ const yamlInMd = {
     'punctuation.definition.metadata.markdown'
   ],
   settings: {
-    foreground: colors.magentaColors700,
+    foreground: `${mapColors(`${getRuntimeColors()}700`)}`,
     fontStyle: 'bold'
   }
-}
+})
 
 export default [tagYaml, yamlPlain, yamlInMd]

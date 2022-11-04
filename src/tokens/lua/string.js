@@ -1,6 +1,6 @@
 import colors from '../../designs/index.js'
 
-const luaString = {
+const luaString = () => ({
   name: 'lua::string',
   scope: [
     'string.quoted.single.lua',
@@ -10,6 +10,6 @@ const luaString = {
   settings: {
     foreground: colors.greenColors300
   }
-}
+})
 
 export default [luaString]

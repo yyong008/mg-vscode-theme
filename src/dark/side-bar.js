@@ -6,7 +6,7 @@ import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
 const sideBar = () => ({
   ['sideBar.background']: colors.grayColors1000,
   ['sideBar.foreground']: colors.grayColors100,
-  ['sideBar.border']: `${mapColors(`${getRuntimeColors()}900`)}`
+  ['sideBar.border']: colors.grayColors1000
 })
 
 /**

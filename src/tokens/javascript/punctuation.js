@@ -39,7 +39,7 @@ const punctuation = () => ({
     ...punctuationScopes.tsx
   ],
   settings: {
-    foreground: colors.magentaColors500
+    foreground: colors.grayColors1000
   }
 })
 

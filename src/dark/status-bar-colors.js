@@ -13,7 +13,9 @@ const statusBarColors = () => ({
  * @type {import('../types/StatusBar.d.ts').StatusBarItem}
  */
 const statusBarItemColors = () => ({
-  [`statusBarItem.activeBackground`]: colors.greenColors400,
+  [`statusBarItem.activeBackground`]: `${mapColors(
+    `${getRuntimeColors()}1000`
+  )}`,
   [`statusBarItem.hoverBackground`]: colors.grayColors1000,
   [`statusBarItem.prominentForeground`]: `${mapColors(
     `${getRuntimeColors()}500`

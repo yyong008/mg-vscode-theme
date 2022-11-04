@@ -15,6 +15,10 @@ import jsLabel from './labelsynax.js'
 import jsEscape from './escape.js'
 import jsClass from './class.js'
 import punctuation from './punctuation.js'
+import tsEnum from './enum.js'
+import tsInterface from './interface.js'
+import tsX from './x.js'
+import tsTypes from './type-system.js'
 
 export default function jsLanguage() {
   return [
@@ -33,6 +37,10 @@ export default function jsLanguage() {
     ...jsLabel,
     ...jsEscape,
     ...jsClass,
-    ...punctuation
+    ...punctuation,
+    ...tsEnum,
+    ...tsInterface,
+    ...tsX,
+    ...tsTypes
   ]
 }

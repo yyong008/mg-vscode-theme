@@ -4,7 +4,7 @@ import colors, { mapColors, getRuntimeColors } from '../designs/index.js'
  * @type {import('../types/ActivityBar').ActivityBar;}
  */
 const activityBar = () => ({
-  ['activityBar.background']: colors.grayColors900,
+  ['activityBar.background']: colors.grayColors1100,
   ['activityBar.foreground']: `${mapColors(`${getRuntimeColors()}400`)}`
 })
 
@@ -12,8 +12,8 @@ const activityBar = () => ({
  * @type {import('../types/ActivityBar').ActivityBarBadge}
  */
 const activityBarBadge = () => ({
-  ['activityBarBadge.background']: colors.volcanoColors600,
-  ['activityBarBadge.foreground']: `${mapColors(`${getRuntimeColors()}600`)}`
+  ['activityBarBadge.background']: `${mapColors(`${getRuntimeColors()}600`)}`,
+  ['activityBarBadge.foreground']: colors.grayColors100
 })
 
 /**

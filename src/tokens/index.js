@@ -16,12 +16,12 @@ export default function createColorTokens() {
     ...javaScriptLanuage(),
     // ...typeScriptLanuage(),
     // ...typescriptReactLanguage(),
-    // ...jsonLanguage(),
+    ...jsonLanguage(),
     ...cssLanguage(),
-    ...htmlLanguage()
-    // ...markdownLanguage(),
-    // ...yamlLanuage(),
-    // ...luaLanuage(),
-    // ...vueLanuage()
+    ...htmlLanguage(),
+    ...markdownLanguage(),
+    ...yamlLanuage(),
+    ...luaLanuage(),
+    ...vueLanuage()
   ].map((f) => f())
 }

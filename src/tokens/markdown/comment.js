@@ -1,6 +1,6 @@
 import colors from '../../designs/index.js'
 
-const markdownComments = {
+const markdownComments = () => ({
   name: 'md::head',
   scope: [
     'punctuation.definition.comment.shell',
@@ -9,6 +9,6 @@ const markdownComments = {
   settings: {
     foreground: colors.purpleColors400
   }
-}
+})
 
 export default [markdownComments]
