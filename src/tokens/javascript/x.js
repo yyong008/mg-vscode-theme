@@ -1,10 +1,10 @@
-import colors from '../../designs/index.js'
+import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const tsx = () => ({
   name: 'tsx::tag',
   scope: ['entity.name.tag.jsx', 'entity.name.tag.tsx'],
   settings: {
-    foreground: colors.cyanColors300
+    foreground: `${mapColors(`${getRuntimeColors()}300`)}`
   }
 })
 
@@ -12,7 +12,7 @@ const tsxProps = () => ({
   name: 'tsx:::tag::props',
   scope: ['entity.other.attribute-name.jsx', 'entity.other.attribute-name.tsx'],
   settings: {
-    foreground: colors.cyanColors700
+    foreground: `${mapColors(`${getRuntimeColors()}700`)}`
   }
 })
 
@@ -28,7 +28,7 @@ const spunctuation = () => ({
     'punctuation.separator.key-value.tsx'
   ],
   settings: {
-    foreground: colors.cyanColors800
+    foreground: `${mapColors(`${getRuntimeColors()}800`)}`
   }
 })
 
@@ -36,7 +36,7 @@ const typeKeyword = () => ({
   name: 'tsx::spunctuation',
   scope: ['keyword.control.type.tsx', 'keyword.control.type.jsx'],
   settings: {
-    foreground: colors.cyanColors800
+    foreground: `${mapColors(`${getRuntimeColors()}800`)}`
   }
 })
 

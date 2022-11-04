@@ -1,4 +1,4 @@
-import colors from '../../designs/index.js'
+import colors, { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const tsxInterface = () => ({
   name: 'tsx::interface',
@@ -12,7 +12,7 @@ const tsxInterfaceName = () => ({
   name: 'tsx::interface::name',
   scope: ['meta.interface.jsx', 'meta.interface.tsx'],
   settings: {
-    foreground: colors.blueColors400
+    foreground: `${mapColors(`${getRuntimeColors()}400`)}`
   }
 })
 

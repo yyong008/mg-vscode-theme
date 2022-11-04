@@ -1,4 +1,4 @@
-import colors from '../../designs/index.js'
+import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const tsxTypePrimitive = () => ({
   name: 'tsx::type.primitive',
@@ -12,7 +12,7 @@ const tsxTypePrimitive = () => ({
     'entity.name.type.alias.tsx'
   ],
   settings: {
-    foreground: colors.cyanColors600,
+    foreground: `${mapColors(`${getRuntimeColors()}600`)}`,
     fontStyle: 'bold'
   }
 })
@@ -21,7 +21,7 @@ const tsxTypeBuildin = () => ({
   name: 'tsx::type.buildin',
   scope: ['support.type.builtin.jsx', 'support.type.builtin.tsx'],
   settings: {
-    foreground: colors.greenColors400,
+    foreground: `${mapColors(`${getRuntimeColors()}400`)}`,
     fontStyle: 'bold'
   }
 })
@@ -30,7 +30,7 @@ const tsxTypeType = () => ({
   name: 'tsx::type.key',
   scope: ['storage.type.type.jsx', 'storage.type.type.tsx'],
   settings: {
-    foreground: colors.cyanColors600,
+    foreground: `${mapColors(`${getRuntimeColors()}700`)}`,
     fontStyle: 'bold italic'
   }
 })
