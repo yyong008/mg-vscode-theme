@@ -1340,6 +1340,16 @@
       }
     },
     {
+      "name": "md::head",
+      "scope": [
+        "punctuation.definition.comment.shell",
+        "comment.line.number-sign.shell"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
       "name": "md::list::number",
       "scope": [
         "markup.list.numbered.markdown"
@@ -1357,6 +1367,16 @@
       "settings": {
         "fontStyle": "blod",
         "foreground": "#ffd666"
+      }
+    },
+    {
+      "name": "md:bold",
+      "scope": [
+        "markup.bold.markdown",
+        "punctuation.definition.bold.markdown"
+      ],
+      "settings": {
+        "foreground": "#bae637"
       }
     },
     {
@@ -1384,32 +1404,13 @@
       }
     },
     {
-      "name": "md:bold",
-      "scope": [
-        "markup.bold.markdown",
-        "punctuation.definition.bold.markdown"
-      ],
-      "settings": {
-        "foreground": "#bae637"
-      }
-    },
-    {
-      "name": "md::head",
-      "scope": [
-        "punctuation.definition.comment.shell",
-        "comment.line.number-sign.shell"
-      ],
-      "settings": {
-        "foreground": "#b37feb"
-      }
-    },
-    {
       "name": "yaml::tagProps",
       "scope": [
-        "entity.name.tag.yaml"
+        "entity.name.tag.yaml",
+        "punctuation.separator.key-value.mapping.yaml"
       ],
       "settings": {
-        "foreground": "#ff9c6e"
+        "foreground": "#597ef7"
       }
     },
     {
@@ -1436,6 +1437,17 @@
       "settings": {
         "foreground": "#d4380d",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "yaml::comment",
+      "scope": [
+        "comment.line.number-sign.yaml",
+        "punctuation.definition.comment.yaml"
+      ],
+      "settings": {
+        "foreground": "#595959",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1620,7 +1632,8 @@
         "comment.line.number-sign.dockerfile"
       ],
       "settings": {
-        "foreground": "#595959"
+        "foreground": "#595959",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1628,27 +1641,218 @@
       "scope": [
         "keyword.other.special-method.dockerfile"
       ],
-      "setting": {
-        "foreground": "#ffbb96"
+      "settings": {
+        "foreground": "#597ef7",
+        "fontStyle": "bold"
       }
     },
     {
       "name": "docker::key",
       "scope": [
-        "\tsource.dockerfile"
+        "source.dockerfile"
       ],
       "setting": {
         "foreground": "#fa541c"
       }
     },
     {
-      "name": "js::string",
+      "name": "dockerfile::string",
       "scope": [
         "string.quoted.single.dockerfile",
         "string.quoted.double.dockerfile"
       ],
       "settings": {
-        "foreground": "#bfbfbf"
+        "foreground": "#bfbfbf",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "rust::keyword",
+      "scope": [
+        "storage.type.rust"
+      ],
+      "settings": {
+        "foreground": "#fa541c",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::variables",
+      "scope": [
+        "variable.other.rust"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "rust::variables",
+      "scope": [
+        "string.quoted.double.rust",
+        "string.quoted.signle.rust",
+        "string.quoted.single.char.rust"
+      ],
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "rust::fn::keyword",
+      "scope": [
+        "keyword.other.fn.rust"
+      ],
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "rust::fn::keyword",
+      "scope": [
+        "entity.name.function.rust"
+      ],
+      "settings": {
+        "foreground": "#f0f0f0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::comment",
+      "scope": [
+        "comment.line.double-slash.rust",
+        "comment.block.rust",
+        "comment.line.documentation.rust",
+        "comment.line.shebang.rust"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "rust::comment",
+      "scope": [
+        "punctuation.definition.attribute.rust",
+        "meta.attribute.rust"
+      ],
+      "settings": {
+        "foreground": "#ffbb96",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "rust::variables",
+      "scope": [
+        "meta.use.rust"
+      ],
+      "settings": {
+        "foreground": "#597ef7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::impl",
+      "scope": [
+        "keyword.other.rust"
+      ],
+      "settings": {
+        "foreground": "#ff7a45",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::variables",
+      "scope": [
+        "keyword.control.rust"
+      ],
+      "settings": {
+        "foreground": "#597ef7"
+      }
+    },
+    {
+      "name": "js::escape",
+      "scope": [
+        "constant.character.escape.backslash.rust",
+        "constant.character.escape.rust"
+      ],
+      "settings": {
+        "foreground": "#597ef7"
+      }
+    },
+    {
+      "name": "rust::operator",
+      "scope": [
+        "keyword.operator.assignment.rust",
+        "keyword.operator.comparison.rust",
+        "keyword.operator.logical.rust",
+        "keyword.operator.arithmetic.rust",
+        "keyword.operator.expression.typeof.rust",
+        "keyword.operator.expression.instanceof.rust",
+        "keyword.operator.increment.rust",
+        "keyword.operator.decrement.rust",
+        "keyword.operator.relational.rust",
+        "keyword.operator.expression.delete.rust",
+        "keyword.operator.new.rust",
+        "keyword.operator.bitwise.rust",
+        "keyword.operator.bitwise.shift.rust",
+        "keyword.operator.spread.rust",
+        "keyword.operator.ternary.rust",
+        "keyword.operator.assignment.compound.rust",
+        "keyword.operator.assignment.compound.bitwise.rust",
+        "keyword.operator.expression.in.rust",
+        "keyword.operator.expression.void.rust",
+        "punctuation.accessor.optional.rust",
+        "keyword.generator.asterisk.rust",
+        "keyword.control.as.rust",
+        "keyword.control.switch.rust"
+      ],
+      "settings": {
+        "foreground": "#597ef7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::typeSystem",
+      "scope": [
+        "entity.name.type.rust",
+        "punctuation.brackets.angle.rust",
+        "storage.type.rust"
+      ],
+      "settings": {
+        "foreground": "#597ef7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "toml::comment",
+      "scope": [
+        "comment.line.number-sign.toml",
+        "punctuation.definition.comment.toml"
+      ],
+      "settings": {
+        "foreground": "#595959",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "toml::comment",
+      "scope": [
+        "string.quoted.single.basic.line.toml",
+        "string.quoted.double.basic.line.toml"
+      ],
+      "settings": {
+        "foreground": "#fafafa",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "toml::comment",
+      "scope": [
+        "support.type.property-name.table.toml"
+      ],
+      "settings": {
+        "foreground": "#597ef7",
+        "fontStyle": "bold"
       }
     }
   ]

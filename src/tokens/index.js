@@ -9,6 +9,8 @@ import yamlLanuage from './yaml/index.js'
 import luaLanuage from './lua/index.js'
 import vueLanuage from './vue/index.js'
 import docker from './docker/index.js'
+import rust from './rust/index.js'
+import toml from './toml/index.js'
 
 export default function createColorTokens() {
   return [
@@ -20,6 +22,8 @@ export default function createColorTokens() {
     ...yamlLanuage(),
     ...luaLanuage(),
     ...vueLanuage(),
-    ...docker()
+    ...docker(),
+    ...rust(),
+    ...toml()
   ].map((f) => f())
 }

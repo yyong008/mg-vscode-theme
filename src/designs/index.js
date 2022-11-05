@@ -204,3 +204,25 @@ export const getRuntimeColors = () => {
 export const mapColors = (color) => {
   return colors[color]
 }
+
+const reverseMap = {
+  blue: 'magenta',
+  red: 'blue',
+  volcano: 'geekBlue',
+  geekBlue: 'magenta',
+  orange: 'purple',
+  purple: 'orange',
+  gold: 'cyan',
+  cyan: 'gold',
+  yellow: 'magenta',
+  magenta: 'yellow',
+  green: 'magenta',
+  lime: 'magenta'
+}
+
+export const mapColorsReverse = (rColor) => {
+  let [currentColors, weight] = rColor.split('Colors')
+  let color = `${reverseMap[currentColors]}Colors${weight}`
+
+  return colors[color]
+}
