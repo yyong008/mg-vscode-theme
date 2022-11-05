@@ -63,47 +63,6 @@ const markdownHead6 = () => ({
   }
 })
 
-const mdListOrder = () => ({
-  name: 'md::list::number',
-  scope: ['markup.list.numbered.markdown'],
-  settings: {
-    fontStyle: 'blod',
-    foreground: colors.volcanoColors500
-  }
-})
-
-const mdListUnOrder = () => ({
-  name: 'md::list::unorder',
-  scope: ['markup.list.unnumbered.markdown'],
-  settings: {
-    fontStyle: 'blod',
-    foreground: colors.goldColors400
-  }
-})
-
-const mdLink = () => ({
-  name: 'md::link',
-  scope: ['string.other.link.title.markdown', 'markup.underline.link.markdown'],
-  settings: {
-    fontStyle: 'blod',
-    foreground: colors.greenColors400
-  }
-})
-
-const mdPunctuation = () => ({
-  name: 'md::punctuation',
-  scope: [
-    'punctuation.definition.link.title.begin.markdown',
-    'punctuation.definition.link.title.end.markdown',
-    'punctuation.definition.metadata.markdown',
-    'punctuation.definition.metadata.markdown'
-  ],
-  settings: {
-    fontStyle: 'blod',
-    foreground: colors.yellowColors600
-  }
-})
-
 const mdBold = () => ({
   name: 'md:bold',
   scope: ['markup.bold.markdown', 'punctuation.definition.bold.markdown'],
@@ -119,10 +78,5 @@ export default [
   markdownHead3,
   markdownHead4,
   markdownHead5,
-  markdownHead6,
-  mdListOrder,
-  mdListUnOrder,
-  mdLink,
-  mdPunctuation,
-  mdBold
+  markdownHead6
 ]

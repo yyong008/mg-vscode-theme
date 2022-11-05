@@ -7,7 +7,7 @@ const markdownComments = () => ({
     'comment.line.number-sign.shell'
   ],
   settings: {
-    foreground: colors.purpleColors400
+    foreground: colors.grayColors800
   }
 })
 
