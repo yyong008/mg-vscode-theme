@@ -5,10 +5,11 @@ const quotedScopes = {
 }
 
 const dockerString = () => ({
-  name: 'js::string',
+  name: 'dockerfile::string',
   scope: [...quotedScopes.docker],
   settings: {
-    foreground: colors.grayColors600
+    foreground: colors.grayColors600,
+    fontStyle: 'italic'
   }
 })
 
