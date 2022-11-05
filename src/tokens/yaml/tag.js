@@ -1,10 +1,17 @@
-import { mapColors, getRuntimeColors } from '../../designs/index.js'
+import {
+  mapColors,
+  getRuntimeColors,
+  mapColorsReverse
+} from '../../designs/index.js'
 
 const tagYaml = () => ({
   name: 'yaml::tagProps',
-  scope: ['entity.name.tag.yaml'],
+  scope: [
+    'entity.name.tag.yaml',
+    'punctuation.separator.key-value.mapping.yaml'
+  ],
   settings: {
-    foreground: `${mapColors(`${getRuntimeColors()}400`)}`
+    foreground: `${mapColorsReverse(`${getRuntimeColors()}500`)}`
   }
 })
 
