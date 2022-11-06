@@ -26,11 +26,11 @@ const statusBarItemColors = () => ({
     `${getRuntimeColors()}700`
   )}`,
   [`statusBarItem.remoteForeground`]: colors.grayColors100,
-  [`statusBarItem.errorBackground`]: colors.grayColors100,
+  [`statusBarItem.errorBackground`]: colors.redColors100,
   [`statusBarItem.errorForeground`]: colors.grayColors100,
-  [`statusBarItem.warningBackground`]: colors.grayColors100,
+  [`statusBarItem.warningBackground`]: colors.yellowColors100,
   [`statusBarItem.warningForeground`]: colors.grayColors100,
-  [`statusBarItem.compactHoverBackground`]: colors.grayColors100,
+  [`statusBarItem.compactHoverBackground`]: colors.cyanColors100,
   [`statusBarItem.focusBorder`]: colors.grayColors100
 })
 
