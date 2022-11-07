@@ -10,6 +10,7 @@ import control from './control.js'
 import escape from './escape.js'
 import operator from './operator.js'
 import typeSystem from './type-system.js'
+import macro from './macro.js'
 
 export default function rustLanuage() {
   return [
@@ -24,6 +25,7 @@ export default function rustLanuage() {
     ...control,
     ...escape,
     ...operator,
-    ...typeSystem
+    ...typeSystem,
+    ...macro
   ]
 }

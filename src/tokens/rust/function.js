@@ -1,11 +1,11 @@
-import colors from '../../designs/index.js'
+import { mapColors, getRuntimeColors } from '../../designs/index.js'
 
 const fnKeyword = () => ({
   name: 'rust::fn::keyword',
   scope: ['keyword.other.fn.rust'],
   settings: {
-    foreground: colors.grayColors100,
-    fontStyle: 'italic'
+    foreground: `${mapColors(`${getRuntimeColors()}500`)}`,
+    fontStyle: 'bold italic'
   }
 })
 
@@ -13,7 +13,7 @@ const fnName = () => ({
   name: 'rust::fn::keyword',
   scope: ['entity.name.function.rust'],
   settings: {
-    foreground: colors.grayColors400,
+    foreground: `${mapColors(`${getRuntimeColors()}200`)}`,
     fontStyle: 'bold'
   }
 })

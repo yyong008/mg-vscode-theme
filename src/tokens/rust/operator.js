@@ -25,7 +25,9 @@ const rustOperator = () => ({
     'punctuation.accessor.optional.rust',
     'keyword.generator.asterisk.rust',
     'keyword.control.as.rust',
-    'keyword.control.switch.rust'
+    'keyword.control.switch.rust',
+    // rust
+    'keyword.operator.borrow.and.rust'
   ],
   settings: {
     foreground: `${mapColorsReverse(`${getRuntimeColors()}500`)}`,

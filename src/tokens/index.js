@@ -11,6 +11,7 @@ import vueLanuage from './vue/index.js'
 import docker from './docker/index.js'
 import rust from './rust/index.js'
 import toml from './toml/index.js'
+import editorconfig from './editorconfig/index.js'
 
 export default function createColorTokens() {
   return [
@@ -24,6 +25,7 @@ export default function createColorTokens() {
     ...vueLanuage(),
     ...docker(),
     ...rust(),
-    ...toml()
+    ...toml(),
+    ...editorconfig()
   ].map((f) => f())
 }

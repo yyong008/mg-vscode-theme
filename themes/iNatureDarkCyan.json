@@ -1703,8 +1703,8 @@
         "keyword.other.fn.rust"
       ],
       "settings": {
-        "foreground": "#ffffff",
-        "fontStyle": "italic"
+        "foreground": "#36cfc9",
+        "fontStyle": "bold italic"
       }
     },
     {
@@ -1713,7 +1713,7 @@
         "entity.name.function.rust"
       ],
       "settings": {
-        "foreground": "#f0f0f0",
+        "foreground": "#b5f5ec",
         "fontStyle": "bold"
       }
     },
@@ -1804,7 +1804,8 @@
         "punctuation.accessor.optional.rust",
         "keyword.generator.asterisk.rust",
         "keyword.control.as.rust",
-        "keyword.control.switch.rust"
+        "keyword.control.switch.rust",
+        "keyword.operator.borrow.and.rust"
       ],
       "settings": {
         "foreground": "#ffc53d",
@@ -1820,6 +1821,16 @@
       ],
       "settings": {
         "foreground": "#ffc53d",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "rust::macro",
+      "scope": [
+        "entity.name.function.macro.rust"
+      ],
+      "settings": {
+        "foreground": "#08979c",
         "fontStyle": "bold"
       }
     },
@@ -1853,6 +1864,15 @@
       "settings": {
         "foreground": "#ffc53d",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "editorconfig::comment",
+      "scope": [
+        "comment.line.number-sign.editorconfig"
+      ],
+      "settings": {
+        "foreground": "#595959"
       }
     }
   ]
