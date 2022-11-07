@@ -12,6 +12,7 @@ import docker from './docker/index.js'
 import rust from './rust/index.js'
 import toml from './toml/index.js'
 import editorconfig from './editorconfig/index.js'
+import shell from './shell/index.js'
 
 export default function createColorTokens() {
   return [
@@ -26,6 +27,7 @@ export default function createColorTokens() {
     ...docker(),
     ...rust(),
     ...toml(),
-    ...editorconfig()
+    ...editorconfig(),
+    ...shell()
   ].map((f) => f())
 }

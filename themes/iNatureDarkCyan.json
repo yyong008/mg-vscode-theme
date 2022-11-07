@@ -1874,6 +1874,115 @@
       "settings": {
         "foreground": "#595959"
       }
+    },
+    {
+      "name": "shell::variable",
+      "scope": [
+        "punctuation.definition.variable.shell",
+        "variable.other.special.shell",
+        "variable.other.positional.shell",
+        "variable.other.normal.shell"
+      ],
+      "settings": {
+        "foreground": "#ffc53d"
+      }
+    },
+    {
+      "name": "editorconfig::comment",
+      "scope": [
+        "punctuation.definition.comment.shebang.shell",
+        "comment.line.number-sign.shebang.shell",
+        "keyword.operator.heredoc.shell",
+        "keyword.control.heredoc-token.shell",
+        "string.unquoted.heredoc.expanded.shell"
+      ],
+      "settings": {
+        "foreground": "#595959"
+      }
+    },
+    {
+      "name": "rust::variables",
+      "scope": [
+        "string.quoted.double.shell",
+        "string.quoted.single.shell"
+      ],
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "shell::modifier",
+      "scope": [
+        "storage.modifier.shell"
+      ],
+      "settings": {
+        "foreground": "#faad14"
+      }
+    },
+    {
+      "name": "shell::punctuation",
+      "scope": [
+        "punctuation.definition.string.begin.shell",
+        "punctuation.definition.string.end.shell",
+        "string.interpolated.backtick.shell"
+      ],
+      "settings": {
+        "foreground": "#ffc53d"
+      }
+    },
+    {
+      "name": "shell::operator",
+      "scope": [
+        "keyword.operator.assignment.shell",
+        "keyword.operator.comparison.shell",
+        "keyword.operator.logical.shell",
+        "keyword.operator.arithmetic.shell",
+        "keyword.operator.expression.typeof.shell",
+        "keyword.operator.expression.instanceof.shell",
+        "keyword.operator.increment.shell",
+        "keyword.operator.decrement.shell",
+        "keyword.operator.relational.shell",
+        "keyword.operator.expression.delete.shell",
+        "keyword.operator.new.shell",
+        "keyword.operator.bitwise.shell",
+        "keyword.operator.bitwise.shift.shell",
+        "keyword.operator.spread.shell",
+        "keyword.operator.ternary.shell",
+        "keyword.operator.assignment.compound.shell",
+        "keyword.operator.assignment.compound.bitwise.shell",
+        "keyword.operator.expression.in.shell",
+        "keyword.operator.expression.void.shell",
+        "punctuation.accessor.optional.shell",
+        "keyword.generator.asterisk.shell",
+        "keyword.control.as.shell",
+        "keyword.control.switch.shell",
+        "keyword.control.shell",
+        "meta.scope.if-block.shell"
+      ],
+      "settings": {
+        "foreground": "#9e1068",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "js::escape",
+      "scope": [
+        "constant.character.escape.shell"
+      ],
+      "settings": {
+        "foreground": "#13c2c2"
+      }
+    },
+    {
+      "name": "shell::punctuation",
+      "scope": [
+        "support.function.builtin.shell"
+      ],
+      "settings": {
+        "foreground": "#ffc53d",
+        "fontStyle": "bold"
+      }
     }
   ]
 }
